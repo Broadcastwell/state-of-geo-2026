@@ -1,0 +1,86 @@
+company_id,segment,answers_sampled,named_pct,cited_pct
+C01,Product & Dev Tools,10,100.0,40.0
+C02,Customer Experience,10,90.0,20.0
+C03,HR & Operations,10,90.0,50.0
+C04,Data & Analytics,10,80.0,0.0
+C05,Product & Dev Tools,10,80.0,0.0
+C06,Customer Experience,10,80.0,90.0
+C07,Product & Dev Tools,10,80.0,60.0
+C08,Ecommerce & Site Search,10,70.0,10.0
+C09,Product & Dev Tools,10,70.0,70.0
+C10,Product & Dev Tools,10,60.0,10.0
+C11,Product & Dev Tools,10,60.0,0.0
+C12,Product & Dev Tools,10,60.0,60.0
+C13,Product & Dev Tools,10,60.0,70.0
+C14,Sales & Marketing Tech,10,60.0,30.0
+C15,Product & Dev Tools,10,60.0,40.0
+C16,Product & Dev Tools,10,60.0,30.0
+C17,Sales & Marketing Tech,10,60.0,80.0
+C18,Customer Experience,10,50.0,30.0
+C19,HR & Operations,10,50.0,40.0
+C20,Product & Dev Tools,10,50.0,30.0
+C21,Product & Dev Tools,10,50.0,10.0
+C22,Vertical & Niche SaaS,10,50.0,40.0
+C23,Product & Dev Tools,10,50.0,50.0
+C24,Sales & Marketing Tech,10,50.0,80.0
+C25,Sales & Marketing Tech,10,50.0,50.0
+C26,HR & Operations,10,50.0,60.0
+C27,Data & Analytics,10,40.0,40.0
+C28,Ecommerce & Site Search,10,40.0,20.0
+C29,Product & Dev Tools,10,40.0,20.0
+C30,Ecommerce & Site Search,10,40.0,40.0
+C31,Ecommerce & Site Search,10,30.0,20.0
+C32,Product & Dev Tools,10,30.0,20.0
+C33,Vertical & Niche SaaS,10,30.0,40.0
+C34,Sales & Marketing Tech,20,30.0,50.0
+C35,HR & Operations,10,30.0,0.0
+C36,Sales & Marketing Tech,10,30.0,10.0
+C37,Product & Dev Tools,10,30.0,80.0
+C38,Customer Experience,10,30.0,40.0
+C39,Sales & Marketing Tech,10,30.0,30.0
+C40,Vertical & Niche SaaS,10,30.0,40.0
+C41,Product & Dev Tools,10,30.0,40.0
+C42,HR & Operations,10,30.0,30.0
+C43,Data & Analytics,10,20.0,20.0
+C44,Ecommerce & Site Search,10,20.0,60.0
+C45,Product & Dev Tools,10,10.0,0.0
+C46,HR & Operations,10,10.0,10.0
+C47,Sales & Marketing Tech,10,10.0,20.0
+C48,Ecommerce & Site Search,10,10.0,0.0
+C49,Customer Experience,10,10.0,10.0
+C50,Sales & Marketing Tech,10,10.0,40.0
+C51,Ecommerce & Site Search,10,10.0,0.0
+C52,Data & Analytics,10,10.0,0.0
+C53,Sales & Marketing Tech,10,10.0,0.0
+C54,Product & Dev Tools,10,10.0,80.0
+C55,Sales & Marketing Tech,10,10.0,20.0
+C56,Ecommerce & Site Search,10,0.0,0.0
+C57,Sales & Marketing Tech,10,0.0,20.0
+C58,Data & Analytics,10,0.0,10.0
+C59,Sales & Marketing Tech,10,0.0,0.0
+C60,Customer Experience,10,0.0,0.0
+C61,Sales & Marketing Tech,10,0.0,0.0
+C62,Sales & Marketing Tech,10,0.0,0.0
+C63,HR & Operations,10,0.0,50.0
+C64,Ecommerce & Site Search,10,0.0,10.0
+C65,Sales & Marketing Tech,10,0.0,0.0
+C66,Data & Analytics,10,0.0,0.0
+C67,Ecommerce & Site Search,10,0.0,30.0
+C68,Customer Experience,10,0.0,0.0
+C69,Customer Experience,10,0.0,0.0
+C70,Product & Dev Tools,10,0.0,0.0
+C71,Customer Experience,10,0.0,10.0
+C72,Sales & Marketing Tech,10,0.0,10.0
+C73,HR & Operations,10,0.0,0.0
+C74,Sales & Marketing Tech,10,0.0,0.0
+C75,Ecommerce & Site Search,10,0.0,0.0
+C76,HR & Operations,10,0.0,0.0
+C77,Ecommerce & Site Search,10,0.0,0.0
+C78,Sales & Marketing Tech,10,0.0,30.0
+C79,HR & Operations,10,0.0,0.0
+C80,Sales & Marketing Tech,10,0.0,0.0
+C81,Data & Analytics,10,0.0,0.0
+C82,Data & Analytics,10,0.0,0.0
+C83,Data & Analytics,10,0.0,40.0
+C84,Sales & Marketing Tech,10,0.0,0.0
+C85,Product & Dev Tools,10,0.0,0.0
