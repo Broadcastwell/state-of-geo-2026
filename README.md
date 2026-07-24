@@ -1,7 +1,6 @@
 # The 2026 State of Generative Engine Optimization — Open Datasets
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21537014.svg)](https://doi.org/10.5281/zenodo.21537014)
-
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.21537013.svg)](https://doi.org/10.5281/zenodo.21537013)
 Supporting data for [The 2026 State of Generative Engine Optimization](https://broadcastwell.com/state-of-geo), published by Broadcastwell Research, v1.0, July 2026.
 
 ## What this is
