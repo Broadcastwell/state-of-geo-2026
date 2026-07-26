@@ -86,6 +86,26 @@ Data released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). R
 
 A Q4 2026 multi-engine edition will add ChatGPT, Perplexity, Gemini and Google AI Overviews. Watch this repository for the release.
 
+## Volume II: The Absence Ladder
+
+How the shape of a company's AI invisibility changes as its visibility rises. Published July 2026.
+
+Across the same 85 B2B software companies in 60 categories, we recorded every buyer question the engine answered without naming the company, then classified all 616 of those absences by question shape. The distribution shifts systematically with visibility: companies named zero times lose category-level questions 55.3% of the time, while companies named 7 or above lose head-to-head comparisons 68.8% of the time. Chi-square = 61.8, df = 15, p = 1.3 x 10^-7.
+
+We also report one null result: category leader strength does not predict challenger visibility. Spearman rho = -0.05, p = 0.64, n = 85.
+
+Full paper: [PAPER.md](PAPER.md)
+
+Datasets:
+
+- [challenger_visibility_v2.csv](challenger_visibility_v2.csv) — 85 rows. Per-company scores, leader score, gap, absence count.
+
+- [absence_questions_classified.csv](absence_questions_classified.csv) — 616 rows. Every absence question, verbatim, with its assigned shape and the company's visibility tier.
+
+- [absence_shape_by_tier.csv](absence_shape_by_tier.csv) — 4 rows. The aggregate table behind Finding 1.
+
+Method: one AI engine with live web search, one run per question. AI answers vary between runs and that variance was not measured. Treat the direction of each finding as the result, not the decimal. The sample is challenger-skewed by construction.
+
 ---
 
 Broadcastwell LLC · Indiana, USA · [hello@broadcastwell.com](mailto:hello@broadcastwell.com)
