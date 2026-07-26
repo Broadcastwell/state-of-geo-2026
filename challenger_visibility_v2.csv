@@ -1,0 +1,86 @@
+company_id,category,times_named_of_10,times_cited_of_10,leader_named_of_10,leader_minus_challenger,competitors_listed,absence_questions
+D01,AI business intelligence software,0,0,9,9,3,10
+D02,AI business intelligence software,1,0,9,8,3,9
+D03,B2B marketing analytics software,0,1,6,6,3,10
+D04,B2B marketing attribution software,6,8,7,1,3,4
+D05,CDP / analytics,2,2,8,6,3,8
+D06,DME billing software,6,6,7,1,3,4
+D07,ELT data pipeline software,0,4,9,9,3,10
+D08,PDF editor,1,0,8,7,4,9
+D09,SOC 2 compliance automation software,10,4,10,0,3,0
+D10,account based marketing software,0,0,10,10,3,10
+D11,account based marketing software,0,0,10,10,3,10
+D12,account based marketing software,0,2,9,9,3,10
+D13,account based marketing software,0,0,9,9,3,10
+D14,account based marketing software,3,6,10,7,3,7
+D15,account based marketing software,3,1,9,6,3,7
+D16,account based marketing software,0,0,9,9,3,10
+D17,account based marketing software,0,0,10,10,3,10
+D18,account based marketing software,1,2,9,8,3,9
+D19,association management software,5,4,7,2,3,5
+D20,banking customer experience software,0,1,3,3,3,10
+D21,best e-signature software for small business,5,3,7,2,3,5
+D22,best error tracking software for developers,8,0,8,0,3,2
+D23,best simple web analytics tool,8,0,7,-1,3,2
+D24,best small business payroll software,9,5,7,-2,3,1
+D25,cap table management,6,1,8,2,4,4
+D26,contract lifecycle management software,0,0,7,7,3,10
+D27,customer advocacy software,5,5,9,4,3,5
+D28,customer data platform,4,4,9,5,3,6
+D29,customer identity / CIAM,4,2,6,2,4,6
+D30,customer success software,9,2,9,0,3,1
+D31,customer support software,0,0,7,7,3,10
+D32,customer support software,5,3,8,3,3,5
+D33,data catalog software,0,1,7,7,3,10
+D34,data observability platform,0,0,7,7,3,10
+D35,data pipelines,0,0,10,10,3,10
+D36,desk booking software,3,0,8,5,3,7
+D37,developer intent data software,3,3,9,6,3,7
+D38,digital adoption,7,7,7,0,3,3
+D39,ecommerce email marketing platform,7,1,8,1,3,3
+D40,ecommerce personalization software,4,2,8,4,3,6
+D41,ecommerce personalization software,3,2,8,5,3,7
+D42,ecommerce personalization software,0,0,5,5,3,10
+D43,ecommerce platform,4,4,9,5,4,6
+D44,ecommerce quiz and personalization software,2,6,6,4,3,8
+D45,ecommerce site search software,1,0,8,7,3,9
+D46,ecommerce site search software,1,0,9,8,3,9
+D47,ecommerce site search software,0,3,8,8,3,10
+D48,ecommerce site search software,0,0,9,9,3,10
+D49,employee engagement software,0,0,6,6,3,10
+D50,employee engagement software,0,0,6,6,3,10
+D51,employer of record software,0,0,7,7,3,10
+D52,feature flag management software,6,3,7,1,3,4
+D53,headless CMS platform,3,8,9,6,3,7
+D54,helpdesk,1,1,8,7,3,9
+D55,helpdesk,8,9,7,-1,3,2
+D56,in-product survey software,3,4,8,5,3,7
+D57,incident management software,0,0,10,10,3,10
+D58,interactive demo software,6,7,7,1,3,4
+D59,interactive demo software,5,5,8,3,3,5
+D60,internal talent marketplace software,5,6,8,3,3,5
+D61,internal tools builder,1,8,9,8,3,9
+D62,marketing data taxonomy software,1,4,5,4,3,9
+D63,medical device inventory software,3,4,3,0,3,7
+D64,no-code app builder,8,6,9,1,3,2
+D65,presentation software,6,0,9,3,5,4
+D66,product adoption platform,6,4,8,2,3,4
+D67,recruitment CRM software,0,5,7,7,3,10
+D68,reinsurance placement software,3,4,3,0,3,7
+D69,resource management software,1,1,7,6,3,9
+D70,resource management software,0,0,6,6,3,10
+D71,resource management software,3,3,5,2,3,7
+D72,revenue intelligence software,6,3,9,3,3,4
+D73,revenue intelligence software,0,3,9,9,3,10
+D74,revenue intelligence software,0,0,10,10,3,10
+D75,revenue intelligence software,0,0,9,9,3,10
+D76,scheduling software,5,4,9,4,3,5
+D77,session replay software,3,2,7,4,3,7
+D78,site search,0,0,8,8,3,10
+D79,site search,0,1,7,7,3,10
+D80,software localization platform,5,1,7,2,3,5
+D81,spend management software,0,0,7,7,3,10
+D82,subscription billing software,3,4,8,5,3,7
+D83,through-channel marketing automation software,1,2,8,7,3,9
+D84,website visitor identification software,1,0,6,5,3,9
+D85,website visitor identification software,5,8,5,0,3,5
