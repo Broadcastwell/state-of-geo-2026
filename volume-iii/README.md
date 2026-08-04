@@ -3,6 +3,15 @@
 Supporting data for **The 2026 State of Generative Engine Optimization, v3.0**,
 DOI `10.5281/zenodo.21789120`.
 
+> **This repository is the corrected copy.** Four presentation defects — three
+> stale cross-references, a collection table that read as a contradiction, a
+> lowercased headline sentence, and a figure 3 label rounded to 2dp so a real
+> +0.002 printed as "+0.00" — were fixed at source and regenerated after the
+> Zenodo deposit. **No number changed.** The archived Zenodo v3.0 files carry the
+> pre-correction text and the 2dp figure and were deliberately not re-uploaded,
+> because that version is frozen and Zenodo files are immutable once published.
+> See [`CORRECTIONS.md`](CORRECTIONS.md) for each item.
+
 Between 05:28 and 16:29 UTC on 4 August 2026 we put 280 B2B software buyer
 questions across 40 categories to four production AI search products (ChatGPT,
 Claude, Perplexity, Google AI Overviews), extracted the set of vendors each
@@ -53,7 +62,7 @@ different-length lists.
 
 | Other metrics | Value |
 |---|---|
-| Mean pairwise Jaccard, all engine pairs | 0.313 (95% CI 0.295 to 0.331), 590 pair observations |
+| Mean pairwise Jaccard, all engine pairs | 0.313 (95% CI 0.295 to 0.330), 590 pair observations |
 | Vendor mentions from exactly one engine (3-engine set, n=142) | 63.3% |
 | Vendor mentions from all three engines | 17.5% |
 | Google AI Overview trigger rate on these buyer questions | 92.1% |

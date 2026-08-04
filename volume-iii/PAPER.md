@@ -75,7 +75,7 @@ A note on what we did not cite. An 11 percent ChatGPT-to-Perplexity domain-overl
 
 ### 3.1 Sample
 
-The sampling frame is inherited from v1.0: the same B2B software categories, so results are directly comparable to the single-engine baseline. Of the 60 categories in the v1.0/v2.0 open dataset we drew **40** by a rule fixed before any data was collected: every category carrying more than one measured company, then singleton categories in alphabetical order until 40 was reached. This maximises the number of companies available for the company-level tie-back in section 5.6.
+The sampling frame is inherited from v1.0: the same B2B software categories, so results are directly comparable to the single-engine baseline. Of the 60 categories in the v1.0/v2.0 open dataset we drew **40** by a rule fixed before any data was collected: every category carrying more than one measured company, then singleton categories in alphabetical order until 40 was reached. This maximises the number of companies available for the company-level tie-back in section 4.6.
 
 Within each category we drew **7 questions**, for **280 questions** in total. 276 come from the study's existing buyer-question bank and 4 from the v1.0 published dataset. **No question was regenerated.** Question shapes reuse v1.0's labels where the question is a v1.0 question, and otherwise a deterministic re-implementation of the v1.0 labelling rules; the label source is recorded per row in `questions.csv`.
 
@@ -110,7 +110,7 @@ Every answer is stored the moment it is scored, one database row per engine-answ
 
 ### 3.3 The repeat baseline
 
-A stratified subsample of **25 questions**, spread across the 40 categories and balanced across question shapes, was run **three times on all four engines**. Section 5.5 reads between-engine agreement against within-engine agreement on exactly these questions, on the same scale. Without it, a divergence number cannot be distinguished from ordinary nondeterminism.
+A stratified subsample of **25 questions**, spread across the 40 categories and balanced across question shapes, was run **three times on all four engines**. Section 4.5 reads between-engine agreement against within-engine agreement on exactly these questions, on the same scale. Without it, a divergence number cannot be distinguished from ordinary nondeterminism.
 
 ### 3.4 Vendor extraction
 
@@ -128,7 +128,7 @@ Every cited URL is reduced to a hostname and classified as vendor-owned, review 
 
 The primary sample is the **18 questions where all four engines returned a usable answer**, out of 280 attempted. Pairwise metrics additionally use every question both engines in that pair answered, which is why pair sample sizes differ and are reported. Attrition is reported per engine rather than absorbed.
 
-A Google query that returns no AI Overview is recorded with its own status, `no_aio`, not as an error. Google declining to generate an AI answer for a commercial buyer question is a result, and section 5.0 treats it as one.
+A Google query that returns no AI Overview is recorded with its own status, `no_aio`, not as an error. Google declining to generate an AI answer for a commercial buyer question is a result, and section 4.0 treats it as one.
 
 ### 3.7 Budget constraint, stated openly
 
@@ -140,12 +140,14 @@ This section exists because the study as planned is not the study that ran, and 
 
 Collection ran 05:28 to 16:29 UTC on 2026-08-04. It began with all four engines live. Over the following few hours three of the four API accounts ran out of money, in this order:
 
-| Engine | Stopped | Reason returned by the API | Answers collected |
+| Engine | What happened | Reason returned by the API | Answers collected |
 |---|---|---|---|
-| ChatGPT | ~06:20 UTC | `You have no credits remaining` | 18 of 280 |
-| Perplexity | 08:04 UTC | `You exceeded your current quota` | 175 of 280 |
-| Claude | 09:15 UTC | `Your credit balance is too low` | 280 of 280 |
-| Google AI Overviews | ran to completion | prepaid SerpApi quota | 280 of 280 |
+| ChatGPT | stopped ~06:20 UTC, account not refilled | `You have no credits remaining` | 18 of 280 |
+| Perplexity | stopped 08:04 UTC, account not refilled | `You exceeded your current quota` | 175 of 280 |
+| Claude | stopped 09:15 UTC, **account topped up, collection resumed the same day and completed** | `Your credit balance is too low` | 280 of 280 |
+| Google AI Overviews | ran to completion, never interrupted | prepaid SerpApi quota | 280 of 280 |
+
+The Claude row is not a contradiction. That account emptied mid-run, was topped up, and the collector resumed on the same day and finished the full 280 questions plus all three repeat runs, because collection is idempotent on `question_id | engine | repeat_index` and only ever collects what is missing. ChatGPT and Perplexity were deliberately not refilled: a refill collected in a second window would make every cross-engine pair span two windows, so engine drift between windows would read as engine divergence and inflate the very quantity this paper measures. Those two engines stay short, and a clean four-engine single-window collection is left to a future volume.
 
 None of these is an engine behaviour. They are billing events on the accounts used to reach the engines, and they are reported separately from `no_aio`, which IS an engine behaviour. Rows carrying a billing error are excluded from every denominator in this paper and are retained in `raw.csv` with status `api_error` so the exclusion is checkable.
 
@@ -272,7 +274,7 @@ For each engine the comparison is like for like, on the same 25 stability questi
 | Perplexity | 0 | no repeats collected | | | no repeat data |
 | Google AI Overviews | 62 | 0.499 (n=62) | 0.240 (n=35) | 0.258 (0.178 to 0.338) | separates, and on every check including both length controls |
 
-**Engine-specific. on google ai overviews the separation survives every length control and is real. on claude it appears on raw jaccard but disappears once list length is controlled, so on claude it cannot be distinguished from a list-length artefact.**
+**Engine-specific. On Google AI Overviews the separation survives every length control and is real. On Claude it appears on raw Jaccard but disappears once list length is controlled, so on Claude it cannot be distinguished from a list-length artefact.**
 
 #### Robustness: is the gap just list length?
 
