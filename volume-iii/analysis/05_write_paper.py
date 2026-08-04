@@ -370,7 +370,7 @@ A(f"The sampling frame is inherited from v1.0: the same B2B software categories,
   f"rule fixed before any data was collected: every category carrying more than one "
   f"measured company, then singleton categories in alphabetical order until 40 was "
   f"reached. This maximises the number of companies available for the company-level "
-  f"tie-back in section 5.6.")
+  f"tie-back in section 4.6.")
 A("")
 A(f"Within each category we drew **{MAN['questions_per_category']} questions**, for "
   f"**{MAN['n_questions']} questions** in total. "
@@ -467,7 +467,7 @@ A("### 3.3 The repeat baseline")
 A("")
 A(f"A stratified subsample of **{MAN['n_stability_questions']} questions**, spread "
   f"across the {MAN['n_categories']} categories and balanced across question shapes, "
-  f"was run **three times on all four engines**. Section 5.5 reads between-engine "
+  f"was run **three times on all four engines**. Section 4.5 reads between-engine "
   f"agreement against within-engine agreement on exactly these questions, on the same "
   f"scale. Without it, a divergence number cannot be distinguished from ordinary "
   f"nondeterminism.")
@@ -509,7 +509,7 @@ A(f"The primary sample is the **{R['n_questions_all_four_ok']} questions where a
 A("")
 A("A Google query that returns no AI Overview is recorded with its own status, "
   "`no_aio`, not as an error. Google declining to generate an AI answer for a "
-  "commercial buyer question is a result, and section 5.0 treats it as one.")
+  "commercial buyer question is a result, and section 4.0 treats it as one.")
 A("")
 A("### 3.7 Budget constraint, stated openly")
 A("")
@@ -533,12 +533,22 @@ A("")
 A(f"Collection ran {WINDOW}. It began with all four engines live. Over the "
   f"following few hours three of the four API accounts ran out of money, in this order:")
 A("")
-A("| Engine | Stopped | Reason returned by the API | Answers collected |")
+A("| Engine | What happened | Reason returned by the API | Answers collected |")
 A("|---|---|---|---|")
-A(f"| ChatGPT | ~06:20 UTC | `You have no credits remaining` | {CC['per_engine']['chatgpt']['main_set_rows']} of {CC['planned_questions']} |")
-A(f"| Perplexity | 08:04 UTC | `You exceeded your current quota` | {CC['per_engine']['perplexity']['main_set_rows']} of {CC['planned_questions']} |")
-A(f"| Claude | 09:15 UTC | `Your credit balance is too low` | {CC['per_engine']['claude']['main_set_rows']} of {CC['planned_questions']} |")
-A(f"| Google AI Overviews | ran to completion | prepaid SerpApi quota | {CC['per_engine']['google_aio']['main_set_rows']} of {CC['planned_questions']} |")
+A(f"| ChatGPT | stopped ~06:20 UTC, account not refilled | `You have no credits remaining` | {CC['per_engine']['chatgpt']['main_set_rows']} of {CC['planned_questions']} |")
+A(f"| Perplexity | stopped 08:04 UTC, account not refilled | `You exceeded your current quota` | {CC['per_engine']['perplexity']['main_set_rows']} of {CC['planned_questions']} |")
+A(f"| Claude | stopped 09:15 UTC, **account topped up, collection resumed the same day and completed** | `Your credit balance is too low` | {CC['per_engine']['claude']['main_set_rows']} of {CC['planned_questions']} |")
+A(f"| Google AI Overviews | ran to completion, never interrupted | prepaid SerpApi quota | {CC['per_engine']['google_aio']['main_set_rows']} of {CC['planned_questions']} |")
+A("")
+A("The Claude row is not a contradiction. That account emptied mid-run, was topped "
+  "up, and the collector resumed on the same day and finished the full 280 questions "
+  "plus all three repeat runs, because collection is idempotent on "
+  "`question_id | engine | repeat_index` and only ever collects what is missing. "
+  "ChatGPT and Perplexity were deliberately not refilled: a refill collected in a "
+  "second window would make every cross-engine pair span two windows, so engine drift "
+  "between windows would read as engine divergence and inflate the very quantity this "
+  "paper measures. Those two engines stay short, and a clean four-engine "
+  "single-window collection is left to a future volume.")
 A("")
 A("None of these is an engine behaviour. They are billing events on the accounts "
   "used to reach the engines, and they are reported separately from `no_aio`, which "
@@ -758,7 +768,14 @@ for e in E:
       f"(n={m['within']['n_pairs']}) | {n(m['between']['mean'])} "
       f"(n={m['between']['n_pairs']}) | {gs} | {blk['verdict']} |")
 A("")
-A(f"**{DTE['headline'].capitalize()}.**")
+def sentence_case(t):
+    """Uppercase only the FIRST character. str.capitalize() lowercases everything
+    after it, which turned 'On Google AI Overviews' into 'on google ai overviews'."""
+    t = str(t or "").strip()
+    return (t[:1].upper() + t[1:]) if t else t
+
+
+A(f"**{sentence_case(DTE['headline'])}.**")
 A("")
 if len(POWERED) == 1 and POWERED[0] in ROBUST:
     _e = POWERED[0]

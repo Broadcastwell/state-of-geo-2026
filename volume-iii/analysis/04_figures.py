@@ -139,7 +139,9 @@ for ax, e in zip(axes, eng_with):
         if g:
             sep = g["lo"] > 0
             ax.text(0.995, base + 0.42,
-                    ("gap " + f"{g['point']:+.2f}" + ("  holds" if sep else "  not significant")),
+                    # 3dp, because at 2dp a real +0.002 renders as "+0.00" and
+                    # reads as an exact zero next to the words "not significant"
+                    ("gap " + f"{g['point']:+.3f}" + ("  holds" if sep else "  not significant")),
                     va="center", ha="right", fontsize=9.5,
                     color=(BLUE_D if sep else "#b45309"), fontweight="bold")
         ys.append(base + 0.42)
