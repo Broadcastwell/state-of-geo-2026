@@ -1,0 +1,2719 @@
+{
+  "generated_from": "data/scored.csv",
+  "engines": [
+    "chatgpt",
+    "claude",
+    "perplexity",
+    "google_aio"
+  ],
+  "bootstrap_reps": 2000,
+  "attrition_main_set": {
+    "chatgpt": {
+      "attempted": 18,
+      "ok": 18,
+      "no_aio": 0,
+      "api_error": 0,
+      "answer_rate": 1.0
+    },
+    "claude": {
+      "attempted": 280,
+      "ok": 280,
+      "no_aio": 0,
+      "api_error": 0,
+      "answer_rate": 1.0
+    },
+    "perplexity": {
+      "attempted": 175,
+      "ok": 157,
+      "no_aio": 0,
+      "api_error": 18,
+      "answer_rate": 0.8971428571428571
+    },
+    "google_aio": {
+      "attempted": 280,
+      "ok": 258,
+      "no_aio": 22,
+      "api_error": 0,
+      "answer_rate": 0.9214285714285714
+    }
+  },
+  "engine_sets": {
+    "four_engine": {
+      "engines": [
+        "chatgpt",
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_questions_all_ok": 18
+    },
+    "three_engine": {
+      "engines": [
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_questions_all_ok": 142
+    },
+    "two_engine": {
+      "engines": [
+        "claude",
+        "google_aio"
+      ],
+      "n_questions_all_ok": 258
+    }
+  },
+  "n_questions_attempted": 280,
+  "n_questions_all_four_ok": 18,
+  "primary_sample_note": "primary sample = questions where all four engines returned status ok; pairwise metrics additionally use questions where both engines in the pair answered",
+  "aio_trigger_rate": {
+    "questions": 280,
+    "triggered": 258,
+    "not_triggered": 22,
+    "rate": 0.9214285714285714
+  },
+  "aio_trigger_rate_by_shape": {
+    "alternatives": {
+      "triggered": 72,
+      "questions": 80,
+      "rate": 0.9
+    },
+    "best-of": {
+      "triggered": 71,
+      "questions": 80,
+      "rate": 0.8875
+    },
+    "comparison": {
+      "triggered": 47,
+      "questions": 47,
+      "rate": 1.0
+    },
+    "evaluation": {
+      "triggered": 34,
+      "questions": 38,
+      "rate": 0.8947368421052632
+    },
+    "other": {
+      "triggered": 2,
+      "questions": 2,
+      "rate": 1.0
+    },
+    "use-case": {
+      "triggered": 32,
+      "questions": 33,
+      "rate": 0.9696969696969697
+    }
+  },
+  "pairwise_jaccard": {
+    "pairs": {
+      "chatgpt|claude": {
+        "n_questions": 18,
+        "mean": 0.23299354787697302,
+        "median": 0.20726495726495725,
+        "ci95": {
+          "point": 0.23299354787697302,
+          "lo": 0.15647953585571464,
+          "hi": 0.3185133064003614,
+          "n": 18
+        }
+      },
+      "chatgpt|perplexity": {
+        "n_questions": 18,
+        "mean": 0.25243720109484225,
+        "median": 0.2403846153846154,
+        "ci95": {
+          "point": 0.25243720109484225,
+          "lo": 0.1846675868414999,
+          "hi": 0.3278717469893941,
+          "n": 18
+        }
+      },
+      "chatgpt|google_aio": {
+        "n_questions": 18,
+        "mean": 0.2229465689225863,
+        "median": 0.19507575757575757,
+        "ci95": {
+          "point": 0.2229465689225863,
+          "lo": 0.14976698076621797,
+          "hi": 0.29913192464960303,
+          "n": 18
+        }
+      },
+      "claude|perplexity": {
+        "n_questions": 153,
+        "mean": 0.3269170563131336,
+        "median": 0.3181818181818182,
+        "ci95": {
+          "point": 0.3269170563131336,
+          "lo": 0.297945404022495,
+          "hi": 0.35667724196198974,
+          "n": 153
+        }
+      },
+      "claude|google_aio": {
+        "n_questions": 247,
+        "mean": 0.31440630289895793,
+        "median": 0.29411764705882354,
+        "ci95": {
+          "point": 0.31440630289895793,
+          "lo": 0.28704186180712565,
+          "hi": 0.3425219421672212,
+          "n": 247
+        }
+      },
+      "perplexity|google_aio": {
+        "n_questions": 136,
+        "mean": 0.3245238213182912,
+        "median": 0.29411764705882354,
+        "ci95": {
+          "point": 0.3245238213182912,
+          "lo": 0.2828909152088985,
+          "hi": 0.36636104688110227,
+          "n": 136
+        }
+      }
+    },
+    "matrix": {
+      "chatgpt": {
+        "chatgpt": 1.0,
+        "claude": 0.23299354787697302,
+        "perplexity": 0.25243720109484225,
+        "google_aio": 0.2229465689225863
+      },
+      "claude": {
+        "chatgpt": 0.23299354787697302,
+        "claude": 1.0,
+        "perplexity": 0.3269170563131336,
+        "google_aio": 0.31440630289895793
+      },
+      "perplexity": {
+        "chatgpt": 0.25243720109484225,
+        "claude": 0.3269170563131336,
+        "perplexity": 1.0,
+        "google_aio": 0.3245238213182912
+      },
+      "google_aio": {
+        "chatgpt": 0.2229465689225863,
+        "claude": 0.31440630289895793,
+        "perplexity": 0.3245238213182912,
+        "google_aio": 1.0
+      }
+    },
+    "overall_mean": 0.3128181319548119,
+    "overall_median": 0.29411764705882354,
+    "overall_ci95": {
+      "point": 0.3128181319548119,
+      "lo": 0.2951752360872256,
+      "hi": 0.33014368570556046,
+      "n": 590
+    },
+    "n_pair_observations": 590
+  },
+  "pairwise_jaccard_universe_only": {
+    "pairs": {
+      "chatgpt|claude": {
+        "n_questions": 10,
+        "mean": 0.4166666666666667,
+        "median": 0.5,
+        "ci95": {
+          "point": 0.4166666666666667,
+          "lo": 0.1833333333333333,
+          "hi": 0.65,
+          "n": 10
+        }
+      },
+      "chatgpt|perplexity": {
+        "n_questions": 10,
+        "mean": 0.39166666666666666,
+        "median": 0.375,
+        "ci95": {
+          "point": 0.39166666666666666,
+          "lo": 0.15,
+          "hi": 0.65,
+          "n": 10
+        }
+      },
+      "chatgpt|google_aio": {
+        "n_questions": 8,
+        "mean": 0.3541666666666667,
+        "median": 0.41666666666666663,
+        "ci95": {
+          "point": 0.3541666666666667,
+          "lo": 0.14583333333333331,
+          "hi": 0.6041666666666666,
+          "n": 8
+        }
+      },
+      "claude|perplexity": {
+        "n_questions": 108,
+        "mean": 0.6280864197530863,
+        "median": 1.0,
+        "ci95": {
+          "point": 0.6280864197530863,
+          "lo": 0.54320987654321,
+          "hi": 0.7098765432098765,
+          "n": 108
+        }
+      },
+      "claude|google_aio": {
+        "n_questions": 148,
+        "mean": 0.44594594594594594,
+        "median": 0.3333333333333333,
+        "ci95": {
+          "point": 0.44594594594594594,
+          "lo": 0.3716216216216216,
+          "hi": 0.5191441441441441,
+          "n": 148
+        }
+      },
+      "perplexity|google_aio": {
+        "n_questions": 86,
+        "mean": 0.4922480620155038,
+        "median": 0.5,
+        "ci95": {
+          "point": 0.4922480620155038,
+          "lo": 0.3934108527131782,
+          "hi": 0.5891472868217055,
+          "n": 86
+        }
+      }
+    },
+    "matrix": {
+      "chatgpt": {
+        "chatgpt": 1.0,
+        "claude": 0.4166666666666667,
+        "perplexity": 0.39166666666666666,
+        "google_aio": 0.3541666666666667
+      },
+      "claude": {
+        "chatgpt": 0.4166666666666667,
+        "claude": 1.0,
+        "perplexity": 0.6280864197530863,
+        "google_aio": 0.44594594594594594
+      },
+      "perplexity": {
+        "chatgpt": 0.39166666666666666,
+        "claude": 0.6280864197530863,
+        "perplexity": 1.0,
+        "google_aio": 0.4922480620155038
+      },
+      "google_aio": {
+        "chatgpt": 0.3541666666666667,
+        "claude": 0.44594594594594594,
+        "perplexity": 0.4922480620155038,
+        "google_aio": 1.0
+      }
+    },
+    "overall_mean": 0.5056306306306306,
+    "overall_median": 0.5,
+    "overall_ci95": {
+      "point": 0.5056306306306306,
+      "lo": 0.45563063063063064,
+      "hi": 0.5513513513513513,
+      "n": 370
+    },
+    "n_pair_observations": 370
+  },
+  "consensus": {
+    "engines": [
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "google_aio"
+    ],
+    "n_engines": 4,
+    "n_questions": 18,
+    "distinct_vendor_slots": 471,
+    "by_engine_count": {
+      "1": 317,
+      "2": 70,
+      "3": 43,
+      "4": 41
+    },
+    "share": {
+      "1": 0.673036093418259,
+      "2": 0.14861995753715498,
+      "3": 0.09129511677282377,
+      "4": 0.0870488322717622
+    }
+  },
+  "consensus_universe_only": {
+    "engines": [
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "google_aio"
+    ],
+    "n_engines": 4,
+    "n_questions": 18,
+    "distinct_vendor_slots": 24,
+    "by_engine_count": {
+      "1": 10,
+      "2": 4,
+      "3": 6,
+      "4": 4
+    },
+    "share": {
+      "1": 0.4166666666666667,
+      "2": 0.16666666666666666,
+      "3": 0.25,
+      "4": 0.16666666666666666
+    }
+  },
+  "consensus_by_engine_set": {
+    "four_engine": {
+      "engines": [
+        "chatgpt",
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_engines": 4,
+      "n_questions": 18,
+      "distinct_vendor_slots": 471,
+      "by_engine_count": {
+        "1": 317,
+        "2": 70,
+        "3": 43,
+        "4": 41
+      },
+      "share": {
+        "1": 0.673036093418259,
+        "2": 0.14861995753715498,
+        "3": 0.09129511677282377,
+        "4": 0.0870488322717622
+      }
+    },
+    "three_engine": {
+      "engines": [
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_engines": 3,
+      "n_questions": 142,
+      "distinct_vendor_slots": 2238,
+      "by_engine_count": {
+        "1": 1416,
+        "2": 430,
+        "3": 392
+      },
+      "share": {
+        "1": 0.6327077747989276,
+        "2": 0.19213583556747096,
+        "3": 0.17515638963360142
+      }
+    },
+    "two_engine": {
+      "engines": [
+        "claude",
+        "google_aio"
+      ],
+      "n_engines": 2,
+      "n_questions": 258,
+      "distinct_vendor_slots": 2664,
+      "by_engine_count": {
+        "1": 1860,
+        "2": 804
+      },
+      "share": {
+        "1": 0.6981981981981982,
+        "2": 0.30180180180180183
+      }
+    }
+  },
+  "consensus_by_engine_set_universe_only": {
+    "four_engine": {
+      "engines": [
+        "chatgpt",
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_engines": 4,
+      "n_questions": 18,
+      "distinct_vendor_slots": 24,
+      "by_engine_count": {
+        "1": 10,
+        "2": 4,
+        "3": 6,
+        "4": 4
+      },
+      "share": {
+        "1": 0.4166666666666667,
+        "2": 0.16666666666666666,
+        "3": 0.25,
+        "4": 0.16666666666666666
+      }
+    },
+    "three_engine": {
+      "engines": [
+        "claude",
+        "perplexity",
+        "google_aio"
+      ],
+      "n_engines": 3,
+      "n_questions": 142,
+      "distinct_vendor_slots": 133,
+      "by_engine_count": {
+        "1": 52,
+        "2": 37,
+        "3": 44
+      },
+      "share": {
+        "1": 0.39097744360902253,
+        "2": 0.2781954887218045,
+        "3": 0.3308270676691729
+      }
+    },
+    "two_engine": {
+      "engines": [
+        "claude",
+        "google_aio"
+      ],
+      "n_engines": 2,
+      "n_questions": 258,
+      "distinct_vendor_slots": 194,
+      "by_engine_count": {
+        "1": 112,
+        "2": 82
+      },
+      "share": {
+        "1": 0.5773195876288659,
+        "2": 0.422680412371134
+      }
+    }
+  },
+  "per_engine_all_answers": {
+    "chatgpt": {
+      "label": "ChatGPT",
+      "answers": 18,
+      "mean_vendors_per_answer": 14.722222222222221,
+      "median_vendors_per_answer": 14.5,
+      "ci95_mean_vendors": {
+        "point": 14.722222222222221,
+        "lo": 11.333333333333334,
+        "hi": 18.38888888888889,
+        "n": 18
+      },
+      "distinct_vendors": 131,
+      "mean_answer_chars": 7627.444444444444
+    },
+    "claude": {
+      "label": "Claude",
+      "answers": 280,
+      "mean_vendors_per_answer": 8.832142857142857,
+      "median_vendors_per_answer": 9.0,
+      "ci95_mean_vendors": {
+        "point": 8.832142857142857,
+        "lo": 8.246428571428572,
+        "hi": 9.407142857142857,
+        "n": 280
+      },
+      "distinct_vendors": 1057,
+      "mean_answer_chars": 3477.5392857142856
+    },
+    "perplexity": {
+      "label": "Perplexity",
+      "answers": 157,
+      "mean_vendors_per_answer": 10.694267515923567,
+      "median_vendors_per_answer": 9,
+      "ci95_mean_vendors": {
+        "point": 10.694267515923567,
+        "lo": 9.452229299363058,
+        "hi": 11.955414012738853,
+        "n": 157
+      },
+      "distinct_vendors": 800,
+      "mean_answer_chars": 6216.75796178344
+    },
+    "google_aio": {
+      "label": "Google AI Overviews",
+      "answers": 258,
+      "mean_vendors_per_answer": 4.771317829457364,
+      "median_vendors_per_answer": 5.0,
+      "ci95_mean_vendors": {
+        "point": 4.771317829457364,
+        "lo": 4.375968992248062,
+        "hi": 5.166666666666667,
+        "n": 258
+      },
+      "distinct_vendors": 512,
+      "mean_answer_chars": 1343.6589147286822
+    }
+  },
+  "per_engine": {
+    "chatgpt": {
+      "label": "ChatGPT",
+      "answers": 18,
+      "mean_vendors_per_answer": 14.722222222222221,
+      "median_vendors_per_answer": 14.5,
+      "ci95_mean_vendors": {
+        "point": 14.722222222222221,
+        "lo": 11.0,
+        "hi": 18.444444444444443,
+        "n": 18
+      },
+      "total_vendor_slots": 265,
+      "unique_to_this_engine": 156,
+      "unique_vendor_rate": 0.5886792452830188,
+      "distinct_vendors": 131
+    },
+    "claude": {
+      "label": "Claude",
+      "answers": 18,
+      "mean_vendors_per_answer": 9.0,
+      "median_vendors_per_answer": 9.5,
+      "ci95_mean_vendors": {
+        "point": 9.0,
+        "lo": 6.666666666666667,
+        "hi": 11.277777777777779,
+        "n": 18
+      },
+      "total_vendor_slots": 162,
+      "unique_to_this_engine": 55,
+      "unique_vendor_rate": 0.3395061728395062,
+      "distinct_vendors": 86
+    },
+    "perplexity": {
+      "label": "Perplexity",
+      "answers": 18,
+      "mean_vendors_per_answer": 11.61111111111111,
+      "median_vendors_per_answer": 12.0,
+      "ci95_mean_vendors": {
+        "point": 11.61111111111111,
+        "lo": 8.5,
+        "hi": 14.777777777777779,
+        "n": 18
+      },
+      "total_vendor_slots": 209,
+      "unique_to_this_engine": 80,
+      "unique_vendor_rate": 0.3827751196172249,
+      "distinct_vendors": 111
+    },
+    "google_aio": {
+      "label": "Google AI Overviews",
+      "answers": 18,
+      "mean_vendors_per_answer": 6.333333333333333,
+      "median_vendors_per_answer": 7.0,
+      "ci95_mean_vendors": {
+        "point": 6.333333333333333,
+        "lo": 4.888888888888889,
+        "hi": 7.722222222222222,
+        "n": 18
+      },
+      "total_vendor_slots": 114,
+      "unique_to_this_engine": 26,
+      "unique_vendor_rate": 0.22807017543859648,
+      "distinct_vendors": 47
+    }
+  },
+  "per_engine_by_engine_set": {
+    "four_engine": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "answers": 18,
+        "mean_vendors_per_answer": 14.722222222222221,
+        "median_vendors_per_answer": 14.5,
+        "ci95_mean_vendors": {
+          "point": 14.722222222222221,
+          "lo": 11.055555555555555,
+          "hi": 18.27777777777778,
+          "n": 18
+        },
+        "total_vendor_slots": 265,
+        "unique_to_this_engine": 156,
+        "unique_vendor_rate": 0.5886792452830188,
+        "distinct_vendors": 131
+      },
+      "claude": {
+        "label": "Claude",
+        "answers": 18,
+        "mean_vendors_per_answer": 9.0,
+        "median_vendors_per_answer": 9.5,
+        "ci95_mean_vendors": {
+          "point": 9.0,
+          "lo": 6.666666666666667,
+          "hi": 11.277777777777779,
+          "n": 18
+        },
+        "total_vendor_slots": 162,
+        "unique_to_this_engine": 55,
+        "unique_vendor_rate": 0.3395061728395062,
+        "distinct_vendors": 86
+      },
+      "perplexity": {
+        "label": "Perplexity",
+        "answers": 18,
+        "mean_vendors_per_answer": 11.61111111111111,
+        "median_vendors_per_answer": 12.0,
+        "ci95_mean_vendors": {
+          "point": 11.61111111111111,
+          "lo": 8.277777777777779,
+          "hi": 14.666666666666666,
+          "n": 18
+        },
+        "total_vendor_slots": 209,
+        "unique_to_this_engine": 80,
+        "unique_vendor_rate": 0.3827751196172249,
+        "distinct_vendors": 111
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "answers": 18,
+        "mean_vendors_per_answer": 6.333333333333333,
+        "median_vendors_per_answer": 7.0,
+        "ci95_mean_vendors": {
+          "point": 6.333333333333333,
+          "lo": 4.944444444444445,
+          "hi": 7.722222222222222,
+          "n": 18
+        },
+        "total_vendor_slots": 114,
+        "unique_to_this_engine": 26,
+        "unique_vendor_rate": 0.22807017543859648,
+        "distinct_vendors": 47
+      }
+    },
+    "three_engine": {
+      "claude": {
+        "label": "Claude",
+        "answers": 142,
+        "mean_vendors_per_answer": 8.795774647887324,
+        "median_vendors_per_answer": 9.0,
+        "ci95_mean_vendors": {
+          "point": 8.795774647887324,
+          "lo": 8.0,
+          "hi": 9.56338028169014,
+          "n": 142
+        },
+        "total_vendor_slots": 1249,
+        "unique_to_this_engine": 507,
+        "unique_vendor_rate": 0.40592473979183347,
+        "distinct_vendors": 614
+      },
+      "perplexity": {
+        "label": "Perplexity",
+        "answers": 142,
+        "mean_vendors_per_answer": 10.605633802816902,
+        "median_vendors_per_answer": 9.0,
+        "ci95_mean_vendors": {
+          "point": 10.605633802816902,
+          "lo": 9.267605633802816,
+          "hi": 11.992957746478874,
+          "n": 142
+        },
+        "total_vendor_slots": 1506,
+        "unique_to_this_engine": 747,
+        "unique_vendor_rate": 0.4960159362549801,
+        "distinct_vendors": 741
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "answers": 142,
+        "mean_vendors_per_answer": 4.908450704225352,
+        "median_vendors_per_answer": 5.0,
+        "ci95_mean_vendors": {
+          "point": 4.908450704225352,
+          "lo": 4.422535211267606,
+          "hi": 5.394366197183099,
+          "n": 142
+        },
+        "total_vendor_slots": 697,
+        "unique_to_this_engine": 162,
+        "unique_vendor_rate": 0.23242467718794835,
+        "distinct_vendors": 318
+      }
+    },
+    "two_engine": {
+      "claude": {
+        "label": "Claude",
+        "answers": 258,
+        "mean_vendors_per_answer": 8.670542635658915,
+        "median_vendors_per_answer": 9.0,
+        "ci95_mean_vendors": {
+          "point": 8.670542635658915,
+          "lo": 8.034883720930232,
+          "hi": 9.313953488372093,
+          "n": 258
+        },
+        "total_vendor_slots": 2237,
+        "unique_to_this_engine": 1433,
+        "unique_vendor_rate": 0.6405900759946357,
+        "distinct_vendors": 982
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "answers": 258,
+        "mean_vendors_per_answer": 4.771317829457364,
+        "median_vendors_per_answer": 5.0,
+        "ci95_mean_vendors": {
+          "point": 4.771317829457364,
+          "lo": 4.372093023255814,
+          "hi": 5.147286821705427,
+          "n": 258
+        },
+        "total_vendor_slots": 1231,
+        "unique_to_this_engine": 427,
+        "unique_vendor_rate": 0.346872461413485,
+        "distinct_vendors": 512
+      }
+    }
+  },
+  "fleiss_kappa": {
+    "kappa": 0.03747235387045833,
+    "n_panels": 504,
+    "raters": 4,
+    "n_questions": 18,
+    "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+  },
+  "fleiss_kappa_universe_only": {
+    "kappa": 0.5336032388663958,
+    "n_panels": 108,
+    "raters": 4,
+    "n_questions": 18,
+    "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+  },
+  "fleiss_kappa_by_engine_set": {
+    "four_engine": {
+      "kappa": 0.03747235387045833,
+      "n_panels": 504,
+      "raters": 4,
+      "n_questions": 18,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    },
+    "three_engine": {
+      "kappa": 0.01455394970306559,
+      "n_panels": 2516,
+      "raters": 3,
+      "n_questions": 142,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    },
+    "two_engine": {
+      "kappa": -0.12906640555221074,
+      "n_panels": 3303,
+      "raters": 2,
+      "n_questions": 258,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    }
+  },
+  "fleiss_kappa_by_engine_set_universe_only": {
+    "four_engine": {
+      "kappa": 0.5336032388663958,
+      "n_panels": 108,
+      "raters": 4,
+      "n_questions": 18,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    },
+    "three_engine": {
+      "kappa": 0.6094678431512655,
+      "n_panels": 737,
+      "raters": 3,
+      "n_questions": 142,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    },
+    "two_engine": {
+      "kappa": 0.5481502669717773,
+      "n_panels": 1354,
+      "raters": 2,
+      "n_questions": 258,
+      "note": "binary mention panels over each question's own category universe plus every vendor any engine named for that question"
+    }
+  },
+  "decisive_test_per_engine": {
+    "stability_questions": 25,
+    "min_pairs_for_a_verdict": 12,
+    "engines": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "modes": {
+          "full": {
+            "description": "Jaccard, full vendor sets",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 3,
+              "mean": 0.07166929355834903,
+              "median": 0.06896551724137931,
+              "ci95": {
+                "point": 0.07166929355834903,
+                "lo": 0.043478260869565216,
+                "hi": 0.10256410256410257,
+                "n": 3
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "universe": {
+            "description": "Jaccard, restricted to the study universe",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 2,
+              "mean": 0.0,
+              "median": 0.0,
+              "ci95": {
+                "point": 0.0,
+                "lo": 0.0,
+                "hi": 0.0,
+                "n": 2
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "topk": {
+            "description": "Jaccard, each answer truncated to its first 5 named vendors",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 3,
+              "mean": 0.20833333333333334,
+              "median": 0.25,
+              "ci95": {
+                "point": 0.20833333333333334,
+                "lo": 0.125,
+                "hi": 0.25,
+                "n": 3
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "overlap": {
+            "description": "Overlap coefficient, normalised by the smaller set",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 3,
+              "mean": 0.2106060606060606,
+              "median": 0.2,
+              "ci95": {
+                "point": 0.2106060606060606,
+                "lo": 0.1818181818181818,
+                "hi": 0.25,
+                "n": 3
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          }
+        },
+        "repeat_pairs": 0,
+        "adequately_powered": false,
+        "length_controls_hold": false,
+        "controls_that_fail": [
+          "full",
+          "universe",
+          "topk",
+          "overlap"
+        ],
+        "verdict": "not enough repeat pairs to assert a verdict"
+      },
+      "claude": {
+        "label": "Claude",
+        "modes": {
+          "full": {
+            "description": "Jaccard, full vendor sets",
+            "within": {
+              "n_pairs": 74,
+              "mean": 0.44198127429338063,
+              "median": 0.47058823529411764,
+              "ci95": {
+                "point": 0.44198127429338063,
+                "lo": 0.38926113274410507,
+                "hi": 0.4936908532806366,
+                "n": 74
+              }
+            },
+            "between": {
+              "n_pairs": 37,
+              "mean": 0.2773524958869787,
+              "median": 0.2727272727272727,
+              "ci95": {
+                "point": 0.2773524958869787,
+                "lo": 0.22167840271288544,
+                "hi": 0.33316942670390953,
+                "n": 37
+              }
+            },
+            "gap": {
+              "point": 0.16462877840640194,
+              "lo": 0.08222472004472647,
+              "hi": 0.2420011491611256
+            },
+            "gap_positive_at_95": true
+          },
+          "universe": {
+            "description": "Jaccard, restricted to the study universe",
+            "within": {
+              "n_pairs": 44,
+              "mean": 0.6477272727272727,
+              "median": 1.0,
+              "ci95": {
+                "point": 0.6477272727272727,
+                "lo": 0.5227272727272727,
+                "hi": 0.7727272727272727,
+                "n": 44
+              }
+            },
+            "between": {
+              "n_pairs": 24,
+              "mean": 0.4583333333333333,
+              "median": 0.5,
+              "ci95": {
+                "point": 0.4583333333333333,
+                "lo": 0.2708333333333333,
+                "hi": 0.6458333333333334,
+                "n": 24
+              }
+            },
+            "gap": {
+              "point": 0.1893939393939394,
+              "lo": -0.030303030303030276,
+              "hi": 0.40340909090909094
+            },
+            "gap_positive_at_95": false
+          },
+          "topk": {
+            "description": "Jaccard, each answer truncated to its first 5 named vendors",
+            "within": {
+              "n_pairs": 74,
+              "mean": 0.4399077649077649,
+              "median": 0.42857142857142855,
+              "ci95": {
+                "point": 0.4399077649077649,
+                "lo": 0.3747962247962248,
+                "hi": 0.5020055770055772,
+                "n": 74
+              }
+            },
+            "between": {
+              "n_pairs": 37,
+              "mean": 0.36484341484341487,
+              "median": 0.42857142857142855,
+              "ci95": {
+                "point": 0.36484341484341487,
+                "lo": 0.29390819390819395,
+                "hi": 0.439039039039039,
+                "n": 37
+              }
+            },
+            "gap": {
+              "point": 0.07506435006435003,
+              "lo": -0.014189189189189377,
+              "hi": 0.17706992706992702
+            },
+            "gap_positive_at_95": false
+          },
+          "overlap": {
+            "description": "Overlap coefficient, normalised by the smaller set",
+            "within": {
+              "n_pairs": 70,
+              "mean": 0.675227076599257,
+              "median": 0.7207792207792207,
+              "ci95": {
+                "point": 0.675227076599257,
+                "lo": 0.6117246444032158,
+                "hi": 0.7370403228767891,
+                "n": 70
+              }
+            },
+            "between": {
+              "n_pairs": 33,
+              "mean": 0.6728342364706003,
+              "median": 0.6818181818181818,
+              "ci95": {
+                "point": 0.6728342364706003,
+                "lo": 0.5801213937577575,
+                "hi": 0.7634942498578864,
+                "n": 33
+              }
+            },
+            "gap": {
+              "point": 0.0023928401286567036,
+              "lo": -0.11224178330466794,
+              "hi": 0.11347213569701609
+            },
+            "gap_positive_at_95": false
+          }
+        },
+        "repeat_pairs": 74,
+        "adequately_powered": true,
+        "length_controls_hold": false,
+        "controls_that_fail": [
+          "universe",
+          "topk",
+          "overlap"
+        ],
+        "verdict": "separates on the headline measure but a length artefact cannot be ruled out"
+      },
+      "perplexity": {
+        "label": "Perplexity",
+        "modes": {
+          "full": {
+            "description": "Jaccard, full vendor sets",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 27,
+              "mean": 0.23512498096806092,
+              "median": 0.25925925925925924,
+              "ci95": {
+                "point": 0.23512498096806092,
+                "lo": 0.17258612443797627,
+                "hi": 0.3045183828517162,
+                "n": 27
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "universe": {
+            "description": "Jaccard, restricted to the study universe",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 18,
+              "mean": 0.5555555555555556,
+              "median": 0.75,
+              "ci95": {
+                "point": 0.5555555555555556,
+                "lo": 0.3611111111111111,
+                "hi": 0.7777777777777778,
+                "n": 18
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "topk": {
+            "description": "Jaccard, each answer truncated to its first 5 named vendors",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 27,
+              "mean": 0.332201646090535,
+              "median": 0.25,
+              "ci95": {
+                "point": 0.332201646090535,
+                "lo": 0.22998236331569666,
+                "hi": 0.4418871252204586,
+                "n": 27
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          },
+          "overlap": {
+            "description": "Overlap coefficient, normalised by the smaller set",
+            "within": {
+              "n_pairs": 0,
+              "mean": null,
+              "median": null,
+              "ci95": null
+            },
+            "between": {
+              "n_pairs": 22,
+              "mean": 0.6346088255179164,
+              "median": 0.6742424242424242,
+              "ci95": {
+                "point": 0.6346088255179164,
+                "lo": 0.5175259084349993,
+                "hi": 0.7385478158205431,
+                "n": 22
+              }
+            },
+            "gap": null,
+            "gap_positive_at_95": false
+          }
+        },
+        "repeat_pairs": 0,
+        "adequately_powered": false,
+        "length_controls_hold": false,
+        "controls_that_fail": [
+          "full",
+          "universe",
+          "topk",
+          "overlap"
+        ],
+        "verdict": "not enough repeat pairs to assert a verdict"
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "modes": {
+          "full": {
+            "description": "Jaccard, full vendor sets",
+            "within": {
+              "n_pairs": 62,
+              "mean": 0.49864664904987493,
+              "median": 0.5,
+              "ci95": {
+                "point": 0.49864664904987493,
+                "lo": 0.4407776363421526,
+                "hi": 0.5558598659405113,
+                "n": 62
+              }
+            },
+            "between": {
+              "n_pairs": 35,
+              "mean": 0.24032450797177835,
+              "median": 0.25,
+              "ci95": {
+                "point": 0.24032450797177835,
+                "lo": 0.18597400133555742,
+                "hi": 0.29521487658395146,
+                "n": 35
+              }
+            },
+            "gap": {
+              "point": 0.2583221410780966,
+              "lo": 0.17795802019614881,
+              "hi": 0.33846792192834013
+            },
+            "gap_positive_at_95": true
+          },
+          "universe": {
+            "description": "Jaccard, restricted to the study universe",
+            "within": {
+              "n_pairs": 20,
+              "mean": 0.625,
+              "median": 1.0,
+              "ci95": {
+                "point": 0.625,
+                "lo": 0.425,
+                "hi": 0.825,
+                "n": 20
+              }
+            },
+            "between": {
+              "n_pairs": 20,
+              "mean": 0.3,
+              "median": 0.0,
+              "ci95": {
+                "point": 0.3,
+                "lo": 0.125,
+                "hi": 0.475,
+                "n": 20
+              }
+            },
+            "gap": {
+              "point": 0.325,
+              "lo": 0.04999999999999999,
+              "hi": 0.5750000000000001
+            },
+            "gap_positive_at_95": true
+          },
+          "topk": {
+            "description": "Jaccard, each answer truncated to its first 5 named vendors",
+            "within": {
+              "n_pairs": 62,
+              "mean": 0.5065284178187405,
+              "median": 0.55,
+              "ci95": {
+                "point": 0.5065284178187405,
+                "lo": 0.44266513056835644,
+                "hi": 0.5645545314900151,
+                "n": 62
+              }
+            },
+            "between": {
+              "n_pairs": 35,
+              "mean": 0.3398639455782313,
+              "median": 0.3333333333333333,
+              "ci95": {
+                "point": 0.3398639455782313,
+                "lo": 0.266156462585034,
+                "hi": 0.4153741496598639,
+                "n": 35
+              }
+            },
+            "gap": {
+              "point": 0.16666447224050918,
+              "lo": 0.06596006144393224,
+              "hi": 0.2615064735571648
+            },
+            "gap_positive_at_95": true
+          },
+          "overlap": {
+            "description": "Overlap coefficient, normalised by the smaller set",
+            "within": {
+              "n_pairs": 58,
+              "mean": 0.8339833059660647,
+              "median": 0.9444444444444444,
+              "ci95": {
+                "point": 0.8339833059660647,
+                "lo": 0.7782430213464697,
+                "hi": 0.8847085385878489,
+                "n": 58
+              }
+            },
+            "between": {
+              "n_pairs": 32,
+              "mean": 0.6412450396825398,
+              "median": 0.6666666666666666,
+              "ci95": {
+                "point": 0.6412450396825398,
+                "lo": 0.5292906746031747,
+                "hi": 0.7495535714285716,
+                "n": 32
+              }
+            },
+            "gap": {
+              "point": 0.19273826628352497,
+              "lo": 0.07498032977558855,
+              "hi": 0.3170720443349754
+            },
+            "gap_positive_at_95": true
+          }
+        },
+        "repeat_pairs": 62,
+        "adequately_powered": true,
+        "length_controls_hold": true,
+        "controls_that_fail": [],
+        "verdict": "separates, and on every check including both length controls"
+      }
+    },
+    "adequately_powered": [
+      "claude",
+      "google_aio"
+    ],
+    "separating_on_headline_measure": [
+      "claude",
+      "google_aio"
+    ],
+    "separating_on_every_control": [
+      "google_aio"
+    ],
+    "length_controls_hold": [
+      "google_aio"
+    ],
+    "headline": "engine-specific. On Google AI Overviews the separation survives every length control and is real. On Claude it appears on raw Jaccard but disappears once list length is controlled, so on Claude it cannot be distinguished from a list-length artefact",
+    "model_split_pairs_excluded": {},
+    "note": "For each engine, within-engine pairs are repeats of the same question on that engine and between-engine pairs are that engine against the others on the same questions. Pairs whose two runs used different model strings are excluded, because they measure a model change rather than run-to-run noise."
+  },
+  "decisive_test": {
+    "stability_questions": 25,
+    "within_engine": {
+      "n_pairs": 136,
+      "mean": 0.4678140186676645,
+      "median": 0.5,
+      "ci95": {
+        "point": 0.4678140186676645,
+        "lo": 0.42676653337405024,
+        "hi": 0.5051515693810804,
+        "n": 136
+      }
+    },
+    "between_engine_same_questions": {
+      "n_pairs": 51,
+      "mean": 0.24741943621218776,
+      "median": 0.25925925925925924,
+      "ci95": {
+        "point": 0.24741943621218776,
+        "lo": 0.20070072195450683,
+        "hi": 0.2977395579489851,
+        "n": 51
+      }
+    },
+    "gap_within_minus_between": {
+      "point": 0.22039458245547672,
+      "lo": 0.15478726769110268,
+      "hi": 0.2813584812494602
+    },
+    "within_by_engine": {
+      "chatgpt": {
+        "n_pairs": 0,
+        "mean": null
+      },
+      "claude": {
+        "n_pairs": 74,
+        "mean": 0.44198127429338063
+      },
+      "perplexity": {
+        "n_pairs": 0,
+        "mean": null
+      },
+      "google_aio": {
+        "n_pairs": 62,
+        "mean": 0.49864664904987493
+      }
+    },
+    "pooled_is_not_the_headline": "The pooled within-engine mean is dominated by whichever engine contributed the most repeat pairs. Read the per-engine table instead.",
+    "verdict": "engine-specific. On Google AI Overviews the separation survives every length control and is real. On Claude it appears on raw Jaccard but disappears once list length is controlled, so on Claude it cannot be distinguished from a list-length artefact"
+  },
+  "company_level": {
+    "companies": 32,
+    "companies_with_two_or_more_engines": 32,
+    "invisible_on_every_engine": 0,
+    "visible_some_engines_only": 14,
+    "visible_on_every_engine_that_answered": 18,
+    "note": "Counted over every answer each engine actually returned, not over the four-engine intersection, because being named is an answer-level fact and the intersection collapsed when three accounts ran out of credit. engines_with_data records how many engines each company was tested on.",
+    "rows": [
+      {
+        "company": "Appcues",
+        "category": "digital adoption",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 5,
+          "perplexity": 0,
+          "google_aio": 2
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.7142857142857143,
+          "perplexity": null,
+          "google_aio": 0.2857142857142857
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Avoma",
+        "category": "revenue intelligence software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 5,
+          "perplexity": 0,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.7142857142857143,
+          "perplexity": null,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "DataGalaxy",
+        "category": "data catalog software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 0,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": null,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Factors.ai",
+        "category": "account based marketing software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 3,
+          "google_aio": 1
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.42857142857142855,
+          "google_aio": 0.14285714285714285
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Folloze",
+        "category": "account based marketing software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 1,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.14285714285714285,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Fourthwall",
+        "category": "ecommerce platform",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 3,
+          "perplexity": 0,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.42857142857142855,
+          "perplexity": null,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "FusionAuth",
+        "category": "customer identity / CIAM",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 6
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 3,
+          "perplexity": 2,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.42857142857142855,
+          "perplexity": 0.2857142857142857,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "GrowthZone",
+        "category": "association management software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 4,
+          "perplexity": 4,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.5714285714285714,
+          "perplexity": 0.5714285714285714,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Help Scout",
+        "category": "customer support software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 3
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 5,
+          "perplexity": 3,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.7142857142857143,
+          "perplexity": 0.42857142857142855,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "HockeyStack",
+        "category": "B2B marketing attribution software",
+        "questions_per_engine": {
+          "chatgpt": 7,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 4,
+        "named": {
+          "chatgpt": 4,
+          "claude": 6,
+          "perplexity": 5,
+          "google_aio": 2
+        },
+        "named_rate": {
+          "chatgpt": 0.5714285714285714,
+          "claude": 0.8571428571428571,
+          "perplexity": 0.7142857142857143,
+          "google_aio": 0.2857142857142857
+        },
+        "engines_naming_at_least_once": 4,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Kadence",
+        "category": "desk booking software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 3,
+          "perplexity": 0,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.42857142857142855,
+          "perplexity": null,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Ledgy",
+        "category": "cap table management",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 4,
+          "perplexity": 5,
+          "google_aio": 4
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.5714285714285714,
+          "perplexity": 0.7142857142857143,
+          "google_aio": 0.5714285714285714
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "LimeSpot",
+        "category": "ecommerce personalization software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 0,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": null,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Metadata",
+        "category": "account based marketing software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 0,
+          "perplexity": 1,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.0,
+          "perplexity": 0.14285714285714285,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "N.Rich",
+        "category": "account based marketing software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 0,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.0,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Navattic",
+        "category": "interactive demo software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 6,
+          "perplexity": 0,
+          "google_aio": 5
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.8571428571428571,
+          "perplexity": null,
+          "google_aio": 0.7142857142857143
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "NikoHealth",
+        "category": "DME billing software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 6
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 4,
+          "perplexity": 6,
+          "google_aio": 2
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.5714285714285714,
+          "perplexity": 0.8571428571428571,
+          "google_aio": 0.3333333333333333
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Nosto",
+        "category": "ecommerce personalization software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 4,
+          "perplexity": 0,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.5714285714285714,
+          "perplexity": null,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Oneflow",
+        "category": "contract lifecycle management software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 6
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 2,
+          "perplexity": 2,
+          "google_aio": 1
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.2857142857142857,
+          "perplexity": 0.2857142857142857,
+          "google_aio": 0.16666666666666666
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Piwik PRO",
+        "category": "CDP / analytics",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 5
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 2,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.2857142857142857,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Reo.Dev",
+        "category": "developer intent data software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 0,
+          "perplexity": 0,
+          "google_aio": 1
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.0,
+          "perplexity": null,
+          "google_aio": 0.14285714285714285
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "RudderStack",
+        "category": "customer data platform",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 6,
+          "google_aio": 6
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 3,
+          "perplexity": 2,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.42857142857142855,
+          "perplexity": 0.3333333333333333,
+          "google_aio": 0.5
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Runn",
+        "category": "resource management software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 0,
+          "google_aio": 2
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": null,
+          "google_aio": 0.2857142857142857
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Snitcher",
+        "category": "website visitor identification software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 0,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": null,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Storylane",
+        "category": "interactive demo software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 6,
+          "perplexity": 0,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.8571428571428571,
+          "perplexity": null,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "UserEvidence",
+        "category": "customer advocacy software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 3,
+          "perplexity": 2,
+          "google_aio": 2
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.42857142857142855,
+          "perplexity": 0.2857142857142857,
+          "google_aio": 0.2857142857142857
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Validio",
+        "category": "data observability platform",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 4,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 0,
+          "perplexity": 2,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.0,
+          "perplexity": 0.5,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Warmly",
+        "category": "website visitor identification software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 7
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 4,
+          "perplexity": 0,
+          "google_aio": 3
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.5714285714285714,
+          "perplexity": null,
+          "google_aio": 0.42857142857142855
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Weld",
+        "category": "ELT data pipeline software",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 6
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 4,
+          "google_aio": 1
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.5714285714285714,
+          "google_aio": 0.16666666666666666
+        },
+        "engines_naming_at_least_once": 3,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "Zenlytic",
+        "category": "AI business intelligence software",
+        "questions_per_engine": {
+          "chatgpt": 7,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 4,
+        "named": {
+          "chatgpt": 0,
+          "claude": 1,
+          "perplexity": 2,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": 0.0,
+          "claude": 0.14285714285714285,
+          "perplexity": 0.2857142857142857,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "eDesk",
+        "category": "helpdesk",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 0,
+          "google_aio": 6
+        },
+        "engines_with_data": 2,
+        "named": {
+          "chatgpt": 0,
+          "claude": 2,
+          "perplexity": 0,
+          "google_aio": 1
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.2857142857142857,
+          "perplexity": null,
+          "google_aio": 0.16666666666666666
+        },
+        "engines_naming_at_least_once": 2,
+        "visible_on_some_invisible_on_others": false,
+        "invisible_everywhere": false
+      },
+      {
+        "company": "iLovePDF",
+        "category": "PDF editor",
+        "questions_per_engine": {
+          "chatgpt": 0,
+          "claude": 7,
+          "perplexity": 7,
+          "google_aio": 7
+        },
+        "engines_with_data": 3,
+        "named": {
+          "chatgpt": 0,
+          "claude": 0,
+          "perplexity": 1,
+          "google_aio": 0
+        },
+        "named_rate": {
+          "chatgpt": null,
+          "claude": 0.0,
+          "perplexity": 0.14285714285714285,
+          "google_aio": 0.0
+        },
+        "engines_naming_at_least_once": 1,
+        "visible_on_some_invisible_on_others": true,
+        "invisible_everywhere": false
+      }
+    ]
+  },
+  "vol1_tieback": {
+    "n": 32,
+    "pearson_r": 0.7034301694442157,
+    "rows": [
+      {
+        "company": "Appcues",
+        "category": "digital adoption",
+        "vol1_claude_named_rate_category_mean": 0.7,
+        "vol3_multi_engine_named_rate": 0.5,
+        "vol3_claude_named_rate": 0.7142857142857143
+      },
+      {
+        "company": "Avoma",
+        "category": "revenue intelligence software",
+        "vol1_claude_named_rate_category_mean": 0.15,
+        "vol3_multi_engine_named_rate": 0.5714285714285714,
+        "vol3_claude_named_rate": 0.7142857142857143
+      },
+      {
+        "company": "DataGalaxy",
+        "category": "data catalog software",
+        "vol1_claude_named_rate_category_mean": 0.0,
+        "vol3_multi_engine_named_rate": 0.07142857142857142,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Factors.ai",
+        "category": "account based marketing software",
+        "vol1_claude_named_rate_category_mean": 0.07777777777777778,
+        "vol3_multi_engine_named_rate": 0.23809523809523805,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Folloze",
+        "category": "account based marketing software",
+        "vol1_claude_named_rate_category_mean": 0.07777777777777778,
+        "vol3_multi_engine_named_rate": 0.09523809523809523,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Fourthwall",
+        "category": "ecommerce platform",
+        "vol1_claude_named_rate_category_mean": 0.4,
+        "vol3_multi_engine_named_rate": 0.42857142857142855,
+        "vol3_claude_named_rate": 0.42857142857142855
+      },
+      {
+        "company": "FusionAuth",
+        "category": "customer identity / CIAM",
+        "vol1_claude_named_rate_category_mean": 0.4,
+        "vol3_multi_engine_named_rate": 0.23809523809523805,
+        "vol3_claude_named_rate": 0.42857142857142855
+      },
+      {
+        "company": "GrowthZone",
+        "category": "association management software",
+        "vol1_claude_named_rate_category_mean": 0.5,
+        "vol3_multi_engine_named_rate": 0.5238095238095238,
+        "vol3_claude_named_rate": 0.5714285714285714
+      },
+      {
+        "company": "Help Scout",
+        "category": "customer support software",
+        "vol1_claude_named_rate_category_mean": 0.25,
+        "vol3_multi_engine_named_rate": 0.38095238095238093,
+        "vol3_claude_named_rate": 0.7142857142857143
+      },
+      {
+        "company": "HockeyStack",
+        "category": "B2B marketing attribution software",
+        "vol1_claude_named_rate_category_mean": 0.6,
+        "vol3_multi_engine_named_rate": 0.6071428571428571,
+        "vol3_claude_named_rate": 0.8571428571428571
+      },
+      {
+        "company": "Kadence",
+        "category": "desk booking software",
+        "vol1_claude_named_rate_category_mean": 0.3,
+        "vol3_multi_engine_named_rate": 0.21428571428571427,
+        "vol3_claude_named_rate": 0.42857142857142855
+      },
+      {
+        "company": "Ledgy",
+        "category": "cap table management",
+        "vol1_claude_named_rate_category_mean": 0.6,
+        "vol3_multi_engine_named_rate": 0.619047619047619,
+        "vol3_claude_named_rate": 0.5714285714285714
+      },
+      {
+        "company": "LimeSpot",
+        "category": "ecommerce personalization software",
+        "vol1_claude_named_rate_category_mean": 0.2333333333333333,
+        "vol3_multi_engine_named_rate": 0.07142857142857142,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Metadata",
+        "category": "account based marketing software",
+        "vol1_claude_named_rate_category_mean": 0.07777777777777778,
+        "vol3_multi_engine_named_rate": 0.047619047619047616,
+        "vol3_claude_named_rate": 0.0
+      },
+      {
+        "company": "N.Rich",
+        "category": "account based marketing software",
+        "vol1_claude_named_rate_category_mean": 0.07777777777777778,
+        "vol3_multi_engine_named_rate": 0.047619047619047616,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Navattic",
+        "category": "interactive demo software",
+        "vol1_claude_named_rate_category_mean": 0.55,
+        "vol3_multi_engine_named_rate": 0.7857142857142857,
+        "vol3_claude_named_rate": 0.8571428571428571
+      },
+      {
+        "company": "NikoHealth",
+        "category": "DME billing software",
+        "vol1_claude_named_rate_category_mean": 0.6,
+        "vol3_multi_engine_named_rate": 0.5873015873015872,
+        "vol3_claude_named_rate": 0.5714285714285714
+      },
+      {
+        "company": "Nosto",
+        "category": "ecommerce personalization software",
+        "vol1_claude_named_rate_category_mean": 0.2333333333333333,
+        "vol3_multi_engine_named_rate": 0.5,
+        "vol3_claude_named_rate": 0.5714285714285714
+      },
+      {
+        "company": "Oneflow",
+        "category": "contract lifecycle management software",
+        "vol1_claude_named_rate_category_mean": 0.0,
+        "vol3_multi_engine_named_rate": 0.24603174603174602,
+        "vol3_claude_named_rate": 0.2857142857142857
+      },
+      {
+        "company": "Piwik PRO",
+        "category": "CDP / analytics",
+        "vol1_claude_named_rate_category_mean": 0.2,
+        "vol3_multi_engine_named_rate": 0.14285714285714285,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Reo.Dev",
+        "category": "developer intent data software",
+        "vol1_claude_named_rate_category_mean": 0.3,
+        "vol3_multi_engine_named_rate": 0.07142857142857142,
+        "vol3_claude_named_rate": 0.0
+      },
+      {
+        "company": "RudderStack",
+        "category": "customer data platform",
+        "vol1_claude_named_rate_category_mean": 0.4,
+        "vol3_multi_engine_named_rate": 0.42063492063492064,
+        "vol3_claude_named_rate": 0.42857142857142855
+      },
+      {
+        "company": "Runn",
+        "category": "resource management software",
+        "vol1_claude_named_rate_category_mean": 0.13333333333333333,
+        "vol3_multi_engine_named_rate": 0.21428571428571427,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Snitcher",
+        "category": "website visitor identification software",
+        "vol1_claude_named_rate_category_mean": 0.3,
+        "vol3_multi_engine_named_rate": 0.07142857142857142,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Storylane",
+        "category": "interactive demo software",
+        "vol1_claude_named_rate_category_mean": 0.55,
+        "vol3_multi_engine_named_rate": 0.6428571428571428,
+        "vol3_claude_named_rate": 0.8571428571428571
+      },
+      {
+        "company": "UserEvidence",
+        "category": "customer advocacy software",
+        "vol1_claude_named_rate_category_mean": 0.5,
+        "vol3_multi_engine_named_rate": 0.3333333333333333,
+        "vol3_claude_named_rate": 0.42857142857142855
+      },
+      {
+        "company": "Validio",
+        "category": "data observability platform",
+        "vol1_claude_named_rate_category_mean": 0.0,
+        "vol3_multi_engine_named_rate": 0.16666666666666666,
+        "vol3_claude_named_rate": 0.0
+      },
+      {
+        "company": "Warmly",
+        "category": "website visitor identification software",
+        "vol1_claude_named_rate_category_mean": 0.3,
+        "vol3_multi_engine_named_rate": 0.5,
+        "vol3_claude_named_rate": 0.5714285714285714
+      },
+      {
+        "company": "Weld",
+        "category": "ELT data pipeline software",
+        "vol1_claude_named_rate_category_mean": 0.0,
+        "vol3_multi_engine_named_rate": 0.2936507936507936,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "Zenlytic",
+        "category": "AI business intelligence software",
+        "vol1_claude_named_rate_category_mean": 0.05,
+        "vol3_multi_engine_named_rate": 0.10714285714285714,
+        "vol3_claude_named_rate": 0.14285714285714285
+      },
+      {
+        "company": "eDesk",
+        "category": "helpdesk",
+        "vol1_claude_named_rate_category_mean": 0.45,
+        "vol3_multi_engine_named_rate": 0.22619047619047616,
+        "vol3_claude_named_rate": 0.2857142857142857
+      },
+      {
+        "company": "iLovePDF",
+        "category": "PDF editor",
+        "vol1_claude_named_rate_category_mean": 0.1,
+        "vol3_multi_engine_named_rate": 0.047619047619047616,
+        "vol3_claude_named_rate": 0.0
+      }
+    ],
+    "note": "Volume I published company-level results anonymised, so the join is at CATEGORY level: each company's Volume III rate is compared with the mean Volume I Claude-engine named rate for its category. This is weaker than a per-company join and is stated as such in the paper."
+  },
+  "citation_mix": {
+    "chatgpt": {
+      "label": "ChatGPT",
+      "answers": 18,
+      "citations": 125,
+      "mix": {
+        "vendor_owned": 107,
+        "review_platform": 5,
+        "editorial": 0,
+        "analyst": 2,
+        "community": 0,
+        "other": 11
+      },
+      "share": {
+        "vendor_owned": 0.856,
+        "review_platform": 0.04,
+        "editorial": 0.0,
+        "analyst": 0.016,
+        "community": 0.0,
+        "other": 0.088
+      },
+      "mean_citations_per_answer": 6.944444444444445
+    },
+    "claude": {
+      "label": "Claude",
+      "answers": 280,
+      "citations": 3563,
+      "mix": {
+        "vendor_owned": 1568,
+        "review_platform": 225,
+        "editorial": 7,
+        "analyst": 53,
+        "community": 21,
+        "other": 1689
+      },
+      "share": {
+        "vendor_owned": 0.4400785854616896,
+        "review_platform": 0.06314903171484704,
+        "editorial": 0.0019646365422396855,
+        "analyst": 0.014875105248386191,
+        "community": 0.005893909626719057,
+        "other": 0.47403873140611846
+      },
+      "mean_citations_per_answer": 12.725
+    },
+    "perplexity": {
+      "label": "Perplexity",
+      "answers": 157,
+      "citations": 3016,
+      "mix": {
+        "vendor_owned": 1181,
+        "review_platform": 192,
+        "editorial": 20,
+        "analyst": 35,
+        "community": 271,
+        "other": 1317
+      },
+      "share": {
+        "vendor_owned": 0.39157824933687,
+        "review_platform": 0.0636604774535809,
+        "editorial": 0.006631299734748011,
+        "analyst": 0.011604774535809019,
+        "community": 0.08985411140583555,
+        "other": 0.4366710875331565
+      },
+      "mean_citations_per_answer": 19.21019108280255
+    },
+    "google_aio": {
+      "label": "Google AI Overviews",
+      "answers": 258,
+      "citations": 2849,
+      "mix": {
+        "vendor_owned": 1091,
+        "review_platform": 74,
+        "editorial": 9,
+        "analyst": 26,
+        "community": 200,
+        "other": 1449
+      },
+      "share": {
+        "vendor_owned": 0.38294138294138297,
+        "review_platform": 0.025974025974025976,
+        "editorial": 0.003159003159003159,
+        "analyst": 0.009126009126009126,
+        "community": 0.0702000702000702,
+        "other": 0.5085995085995086
+      },
+      "mean_citations_per_answer": 11.042635658914728
+    }
+  },
+  "citation_top100_domains": {
+    "per_engine": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "distinct_domains_all": 49,
+        "citations_in_top100_domains": 125,
+        "share_of_all_citations": 1.0,
+        "vendor_owned_share": 0.856,
+        "review_platform_share": 0.04,
+        "mix": {
+          "vendor_owned": 107,
+          "other": 11,
+          "review_platform": 5,
+          "analyst": 2
+        }
+      },
+      "claude": {
+        "label": "Claude",
+        "distinct_domains_all": 1453,
+        "citations_in_top100_domains": 1250,
+        "share_of_all_citations": 0.34616449736914984,
+        "vendor_owned_share": 0.5592,
+        "review_platform_share": 0.172,
+        "mix": {
+          "vendor_owned": 699,
+          "other": 228,
+          "review_platform": 215,
+          "community": 17,
+          "analyst": 50,
+          "independent_media": 41
+        }
+      },
+      "perplexity": {
+        "label": "Perplexity",
+        "distinct_domains_all": 1189,
+        "citations_in_top100_domains": 1273,
+        "share_of_all_citations": 0.4177879881851001,
+        "vendor_owned_share": 0.4556166535742341,
+        "review_platform_share": 0.14218381775333858,
+        "mix": {
+          "other": 179,
+          "vendor_owned": 580,
+          "community": 260,
+          "review_platform": 181,
+          "analyst": 34,
+          "independent_media": 21,
+          "editorial": 18
+        }
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "distinct_domains_all": 1458,
+        "citations_in_top100_domains": 981,
+        "share_of_all_citations": 0.34169278996865204,
+        "vendor_owned_share": 0.5688073394495413,
+        "review_platform_share": 0.05198776758409786,
+        "mix": {
+          "vendor_owned": 558,
+          "other": 144,
+          "community": 188,
+          "review_platform": 51,
+          "analyst": 25,
+          "independent_media": 10,
+          "editorial": 5
+        }
+      }
+    },
+    "pooled": {
+      "distinct_domains_all": 2809,
+      "citations_in_top100_domains": 3172,
+      "vendor_owned_share": 0.5230138713745272,
+      "review_platform_share": 0.14627994955863807,
+      "mix": {
+        "vendor_owned": 1659,
+        "other": 366,
+        "community": 460,
+        "review_platform": 464,
+        "analyst": 110,
+        "independent_media": 81,
+        "editorial": 32
+      }
+    },
+    "note": "Volume I's 77.4% vendor-authored figure was computed over the 100 most-cited domains, not over all citations. This block reproduces that denominator; the all-citations table is a different and wider measure and the two must not be compared directly."
+  },
+  "citation_concentration": {
+    "total_citations": 9654,
+    "distinct_domains": 2809,
+    "top10_share": 0.11207789517298529,
+    "share_of_domains_cited_once": 0.5567817728729085
+  },
+  "models_seen": {
+    "chatgpt": [
+      "gpt-5.5-2026-04-23"
+    ],
+    "claude": [
+      "claude-sonnet-5"
+    ],
+    "perplexity": [
+      "sonar-pro"
+    ],
+    "google_aio": [
+      "google_ai_overview (SerpApi Best Effort)"
+    ]
+  },
+  "model_counts": {
+    "chatgpt": {
+      "gpt-5.5-2026-04-23": 18
+    },
+    "claude": {
+      "claude-sonnet-5": 330
+    },
+    "perplexity": {
+      "sonar-pro": 157
+    },
+    "google_aio": {
+      "google_ai_overview (SerpApi Best Effort)": 303
+    }
+  },
+  "model_strings_on_failed_calls": {
+    "chatgpt": {},
+    "claude": {},
+    "perplexity": {
+      "sonar-pro": 18
+    },
+    "google_aio": {}
+  },
+  "extractor_model": {
+    "model": "claude-sonnet-4-6",
+    "temperature": 0,
+    "why_not_the_engine_model": "claude-sonnet-5 rejects the request with 'temperature is deprecated for this model', so the Layer 2 extractor cannot be pinned to temperature 0 on it. The extractor runs on claude-sonnet-4-6, which still accepts temperature. This is the extractor only and is unrelated to the Claude ENGINE, every answer of which was produced by claude-sonnet-5."
+  },
+  "collection_window": {
+    "first": "2026-08-04T05:28:15.425Z",
+    "last": "2026-08-04T16:29:57.046Z",
+    "date": "2026-08-04",
+    "utc_window": "05:28 to 16:29 UTC on 2026-08-04",
+    "single_day": true
+  },
+  "serpapi_calls_used_total": 631,
+  "rows_total": 853,
+  "layer2_coverage": {
+    "answers_ok": 808,
+    "with_layer2": 808,
+    "coverage": 1.0,
+    "missing_by_engine": {},
+    "note": "Layer 2 stopped when the Anthropic account ran out of credits. Layer 1 covers 100% of answers. Layer 2 can only add out-of-universe vendors, so the gap can only narrow a vendor set, never widen one, and every universe-only statistic here is unaffected."
+  },
+  "collection_completeness": {
+    "planned_questions": 280,
+    "planned_stability_questions": 25,
+    "planned_stability_repeats": 3,
+    "per_engine": {
+      "chatgpt": {
+        "label": "ChatGPT",
+        "main_set_rows": 18,
+        "main_set_ok": 18,
+        "stability_questions_with_3_repeats": 0,
+        "billing_errors": 0
+      },
+      "claude": {
+        "label": "Claude",
+        "main_set_rows": 280,
+        "main_set_ok": 280,
+        "stability_questions_with_3_repeats": 25,
+        "billing_errors": 0
+      },
+      "perplexity": {
+        "label": "Perplexity",
+        "main_set_rows": 175,
+        "main_set_ok": 157,
+        "stability_questions_with_3_repeats": 0,
+        "billing_errors": 18
+      },
+      "google_aio": {
+        "label": "Google AI Overviews",
+        "main_set_rows": 280,
+        "main_set_ok": 280,
+        "stability_questions_with_3_repeats": 25,
+        "billing_errors": 0
+      }
+    }
+  }
+}

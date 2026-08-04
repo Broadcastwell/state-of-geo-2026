@@ -1,0 +1,281 @@
+question_id,category,question_text,question_shape,source,shape_source,in_stability_subsample
+Q0001,AI business intelligence software,What AI BI tools are best for reducing dependency on data analysts when business stakeholders need ad hoc reporting?,best-of,question_bank,vol1_labelled,True
+Q0002,AI business intelligence software,What are the best Looker alternatives for companies that want conversational analytics?,alternatives,question_bank,regenerated_label,False
+Q0003,AI business intelligence software,Omni vs ThoughtSpot: which AI BI tool is better for mid-market companies?,comparison,question_bank,vol1_labelled,False
+Q0004,AI business intelligence software,How can AI business intelligence software help reduce reliance on data analysts for reporting?,use-case,question_bank,vol1_labelled,False
+Q0005,AI business intelligence software,How do I evaluate and compare AI business intelligence platforms for a mid-market or enterprise company?,evaluation,question_bank,vol1_labelled,False
+Q0006,AI business intelligence software,What AI BI tools work best for connecting natural language queries to cloud data warehouses?,best-of,question_bank,vol1_labelled,False
+Q0007,AI business intelligence software,What are the best Tableau Pulse alternatives for automated data insights?,alternatives,question_bank,vol1_labelled,False
+Q0008,B2B marketing analytics software,What are the best marketing analytics platforms for measuring B2B pipeline attribution?,best-of,question_bank,vol1_labelled,False
+Q0009,B2B marketing analytics software,What are the best alternatives to 6sense for B2B marketing analytics and attribution?,alternatives,question_bank,vol1_labelled,False
+Q0010,B2B marketing analytics software,6sense vs Demandbase: which is better for B2B marketing analytics and account intelligence?,comparison,question_bank,vol1_labelled,False
+Q0011,B2B marketing analytics software,How can B2B marketing teams use analytics software to prove ROI across paid and organic channels?,use-case,question_bank,vol1_labelled,False
+Q0012,B2B marketing analytics software,How much does B2B marketing analytics and attribution software typically cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0013,B2B marketing analytics software,What is the best B2B marketing analytics software for enterprise demand generation teams?,best-of,question_bank,vol1_labelled,True
+Q0014,B2B marketing analytics software,What are the top Demandbase alternatives for B2B revenue and pipeline analytics?,alternatives,question_bank,vol1_labelled,False
+Q0015,B2B marketing attribution software,What is the best B2B marketing attribution software for enterprise SaaS companies?,best-of,question_bank,regenerated_label,False
+Q0016,B2B marketing attribution software,What are the best Bizible alternatives for Salesforce users?,alternatives,question_bank,regenerated_label,False
+Q0017,B2B marketing attribution software,6sense vs Dreamdata: which is better for B2B pipeline attribution?,comparison,question_bank,vol1_labelled,False
+Q0018,B2B marketing attribution software,How can B2B marketing attribution software help me prove ROI on paid media campaigns?,use-case,question_bank,vol1_labelled,False
+Q0019,B2B marketing attribution software,How much does B2B marketing attribution software typically cost and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,False
+Q0020,B2B marketing attribution software,What is the best marketing attribution platform for account-based marketing?,best-of,question_bank,regenerated_label,False
+Q0021,B2B marketing attribution software,What are the best alternatives to 6sense for B2B marketing attribution?,alternatives,question_bank,regenerated_label,False
+Q0022,CDP / analytics,What CDP solution is best for a European company that needs to keep all customer data within EU borders for compliance?,best-of,question_bank,regenerated_label,False
+Q0023,CDP / analytics,What are the best Adobe Analytics alternatives for teams that want simpler implementation without sacrificing data depth?,alternatives,question_bank,vol1_labelled,True
+Q0024,CDP / analytics,Self-hosted CDP vs cloud-based CDP which approach is better for companies in regulated industries like healthcare or finance?,comparison,question_bank,vol1_labelled,False
+Q0025,CDP / analytics,How can a B2B SaaS company use a customer data platform to unify product analytics and marketing attribution data?,use-case,question_bank,vol1_labelled,False
+Q0026,CDP / analytics,How do I evaluate and compare enterprise CDP platforms on pricing total cost of ownership and data privacy controls?,evaluation,question_bank,vol1_labelled,False
+Q0027,CDP / analytics,What are the best CDP and analytics solutions for organizations that need full data ownership and GDPR compliance?,best-of,question_bank,vol1_labelled,False
+Q0028,CDP / analytics,What are the best Segment alternatives for companies that need on-premise or private cloud data processing?,alternatives,question_bank,vol1_labelled,False
+Q0029,DME billing software,What DME billing software is best suited for respiratory therapy and CPAP supply companies managing recurring orders and resupply programs?,best-of,question_bank,regenerated_label,False
+Q0030,DME billing software,What are the best Brightree alternatives for DME billing and inventory management?,alternatives,question_bank,regenerated_label,False
+Q0031,DME billing software,Brightree vs Bonafide for DME billing: which platform is better for growing HME businesses?,comparison,question_bank,vol1_labelled,False
+Q0032,DME billing software,How can DME billing software help home medical equipment companies streamline Medicare and Medicaid claims processing?,use-case,question_bank,vol1_labelled,False
+Q0033,DME billing software,How should I evaluate and compare pricing models for DME billing software when switching from a legacy system?,evaluation,question_bank,vol1_labelled,False
+Q0034,DME billing software,What is the best DME billing software for managing complex insurance eligibility verification and prior authorizations?,best-of,question_bank,regenerated_label,False
+Q0035,DME billing software,What are the best DMEworks alternatives for home medical equipment providers looking for cloud-based billing solutions?,alternatives,question_bank,regenerated_label,True
+Q0036,ELT data pipeline software,What are the best ELT pipeline platforms for syncing data into a cloud data warehouse?,best-of,question_bank,vol1_labelled,False
+Q0037,ELT data pipeline software,What are the best Fivetran alternatives for ELT data pipelines?,alternatives,question_bank,vol1_labelled,False
+Q0038,ELT data pipeline software,Fivetran vs Airbyte: which is better for building a modern data stack?,comparison,question_bank,vol1_labelled,False
+Q0039,ELT data pipeline software,How do companies use ELT pipeline tools to centralize data from marketing and sales platforms into a data warehouse?,use-case,question_bank,vol1_labelled,False
+Q0040,ELT data pipeline software,How do ELT data pipeline tools typically price their plans and what should I evaluate before choosing one?,evaluation,question_bank,vol1_labelled,False
+Q0041,ELT data pipeline software,What is the best ELT data pipeline solution for a SaaS company that needs real-time reporting across multiple data sources?,best-of,question_bank,vol1_labelled,False
+Q0042,ELT data pipeline software,What are the top Airbyte alternatives for managed ELT data integration?,alternatives,question_bank,vol1_labelled,False
+Q0043,PDF editor,What PDF editing tools are best suited for HR teams managing employee onboarding documents?,best-of,question_bank,vol1_labelled,False
+Q0044,PDF editor,What are the best alternatives to Adobe Acrobat for business PDF management?,alternatives,question_bank,vol1_labelled,False
+Q0045,PDF editor,Adobe Acrobat vs Foxit PDF Editor: which is better for business use?,comparison,question_bank,vol1_labelled,True
+Q0046,PDF editor,How can a business use a PDF editor to streamline contract signing and approval workflows?,use-case,question_bank,vol1_labelled,False
+Q0047,PDF editor,How should a business evaluate and compare PDF editor pricing plans before committing to a subscription?,evaluation,question_bank,vol1_labelled,False
+Q0048,PDF editor,What is the best PDF editing tool for businesses that need bulk document processing?,best-of,question_bank,regenerated_label,False
+Q0049,PDF editor,What are the most affordable alternatives to Nitro PDF for enterprise document workflows?,alternatives,question_bank,vol1_labelled,False
+Q0050,SOC 2 compliance automation software,What is the best SOC 2 compliance automation software for startups?,best-of,question_bank,regenerated_label,False
+Q0051,SOC 2 compliance automation software,What are the best alternatives to Drata for SOC 2 compliance automation?,alternatives,question_bank,regenerated_label,False
+Q0052,SOC 2 compliance automation software,Drata vs Sprinto: which SOC 2 compliance automation tool is better?,comparison,question_bank,regenerated_label,False
+Q0053,SOC 2 compliance automation software,How much does SOC 2 compliance automation software typically cost and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,False
+Q0054,SOC 2 compliance automation software,What is the best SOC 2 compliance tool for fast-growing SaaS companies?,best-of,question_bank,regenerated_label,False
+Q0055,SOC 2 compliance automation software,What are the top Secureframe alternatives for automating security compliance?,alternatives,question_bank,regenerated_label,False
+Q0056,SOC 2 compliance automation software,Secureframe vs Sprinto: how do they compare for SOC 2 readiness?,comparison,question_bank,regenerated_label,False
+Q0057,account based marketing software,What ABM platforms work best for aligning sales and marketing teams around high-value account targeting?,best-of,question_bank,regenerated_label,False
+Q0058,account based marketing software,6sense alternatives for B2B marketers,alternatives,question_bank,vol1_labelled,False
+Q0059,account based marketing software,6sense vs Demandbase which ABM platform is better for pipeline generation,comparison,question_bank,vol1_labelled,False
+Q0060,account based marketing software,How can account based marketing software help B2B companies create personalized content experiences for target accounts?,use-case,question_bank,vol1_labelled,True
+Q0061,account based marketing software,How much does account based marketing software cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0062,account based marketing software,What ABM platforms work best for person-level advertising to individual buyers within target accounts?,best-of,question_bank,regenerated_label,False
+Q0063,account based marketing software,6sense alternatives for account based marketing,alternatives,question_bank,vol1_labelled,False
+Q0064,association management software,What is the best all-in-one AMS solution for chambers of commerce?,best-of,question_bank,regenerated_label,False
+Q0065,association management software,What are the best alternatives to MemberClicks for associations needing advanced event management?,alternatives,question_bank,regenerated_label,False
+Q0066,association management software,MemberClicks vs Novi AMS: which is better for small to mid-sized associations?,comparison,question_bank,vol1_labelled,False
+Q0067,association management software,How can association management software help automate membership renewals and reduce administrative overhead?,use-case,question_bank,vol1_labelled,False
+Q0068,association management software,How much does association management software typically cost and what should be included in an AMS evaluation checklist?,evaluation,question_bank,vol1_labelled,True
+Q0069,association management software,What is the best association management software for mid-sized professional associations?,best-of,question_bank,regenerated_label,False
+Q0070,association management software,What are the best alternatives to Wild Apricot for growing associations?,alternatives,question_bank,regenerated_label,False
+Q0071,banking customer experience software,What are the best digital customer engagement platforms for financial services companies?,best-of,question_bank,vol1_labelled,False
+Q0072,banking customer experience software,What are the best alternatives to Salesforce Financial Services Cloud for banking customer experience?,alternatives,question_bank,vol1_labelled,False
+Q0073,banking customer experience software,Glia vs Pega for banking customer experience management: which is better?,comparison,question_bank,vol1_labelled,False
+Q0074,banking customer experience software,How can banks use customer experience software to reduce onboarding friction and improve account opening completion rates?,use-case,question_bank,vol1_labelled,False
+Q0075,banking customer experience software,How should a mid-sized bank or credit union evaluate and price customer experience management software when comparing enterprise vendors?,evaluation,question_bank,vol1_labelled,False
+Q0076,banking customer experience software,What is the best customer experience software for banks and credit unions?,best-of,question_bank,vol1_labelled,False
+Q0077,banking customer experience software,What are the top alternatives to Glia for digital banking customer support and engagement?,alternatives,question_bank,vol1_labelled,False
+Q0078,best e-signature software for small business,What e-signature solution works best for small businesses that frequently send sales proposals and agreements?,best-of,question_bank,regenerated_label,True
+Q0079,best e-signature software for small business,What are the best alternatives to expensive enterprise e-signature solutions for small businesses?,alternatives,question_bank,regenerated_label,False
+Q0080,best e-signature software for small business,PandaDoc vs Dropbox Sign: which e-signature tool offers more value for small businesses?,comparison,question_bank,vol1_labelled,False
+Q0081,best e-signature software for small business,How can small businesses use e-signature software to streamline their client onboarding process?,use-case,question_bank,vol1_labelled,False
+Q0082,best e-signature software for small business,How should a small business evaluate and compare e-signature software pricing plans before committing to a subscription?,evaluation,question_bank,vol1_labelled,False
+Q0083,best e-signature software for small business,What is the best e-signature software for small businesses in 2024?,best-of,question_bank,regenerated_label,False
+Q0084,best e-signature software for small business,What are the most affordable e-signature software alternatives for startups and small businesses?,alternatives,question_bank,regenerated_label,False
+Q0085,best error tracking software for developers,What are the best application monitoring and error tracking tools for software developers in 2024?,best-of,question_bank,regenerated_label,False
+Q0086,best error tracking software for developers,What are the best Rollbar alternatives for error tracking and performance monitoring?,alternatives,question_bank,regenerated_label,False
+Q0087,best error tracking software for developers,How do the pricing models of leading error tracking platforms compare for startups versus enterprise teams?,comparison,question_bank,regenerated_label,False
+Q0088,best error tracking software for developers,What error tracking tool is best for teams that need real-time alerting and root cause analysis across microservices?,best-of,question_bank,regenerated_label,True
+Q0089,best error tracking software for developers,What are the top Raygun alternatives for teams looking for more developer-friendly error tracking?,alternatives,question_bank,regenerated_label,False
+Q0090,best error tracking software for developers,Raygun vs AppSignal: which is the better choice for full-stack error monitoring?,comparison,question_bank,vol1_labelled,False
+Q0091,best error tracking software for developers,How can error tracking software help reduce mean time to resolution for production bugs?,other,question_bank,regenerated_label,False
+Q0092,best simple web analytics tool,What is the best lightweight web analytics tool for marketing teams without technical resources?,best-of,question_bank,regenerated_label,False
+Q0093,best simple web analytics tool,What are the best alternatives to complex enterprise web analytics platforms?,alternatives,question_bank,vol1_labelled,False
+Q0094,best simple web analytics tool,Fathom vs Matomo: which simple web analytics tool is easier to set up and use?,comparison,question_bank,regenerated_label,False
+Q0095,best simple web analytics tool,What is the best privacy-friendly web analytics tool for SaaS companies?,best-of,question_bank,regenerated_label,False
+Q0096,best simple web analytics tool,What are the simplest alternatives to bloated web analytics tools for startups?,alternatives,question_bank,regenerated_label,False
+Q0097,best simple web analytics tool,How much do privacy-focused web analytics tools cost compared to free enterprise analytics platforms?,comparison,question_bank,regenerated_label,False
+Q0098,best simple web analytics tool,How can a B2B company track website conversions without using a complicated analytics platform?,other,question_bank,regenerated_label,False
+Q0099,best small business payroll software,What is the best payroll and HR software for remote teams with contractors and full-time employees?,best-of,question_bank,regenerated_label,False
+Q0100,best small business payroll software,What are the best alternatives to ADP for small businesses looking for simpler payroll solutions?,alternatives,question_bank,regenerated_label,True
+Q0101,best small business payroll software,OnPay vs Patriot Software: which is better for small business payroll?,comparison,question_bank,regenerated_label,False
+Q0102,best small business payroll software,Which payroll software is easiest to set up for a small retail business with hourly workers?,use-case,question_bank,regenerated_label,False
+Q0103,best small business payroll software,How much does small business payroll software typically cost and what features should I expect at each price tier?,evaluation,question_bank,regenerated_label,False
+Q0104,best small business payroll software,What is the best payroll software for startups that need automated tax filing?,best-of,question_bank,regenerated_label,False
+Q0105,best small business payroll software,What are the best alternatives to OnPay for small business payroll?,alternatives,question_bank,regenerated_label,False
+Q0106,cap table management,What cap table management platform is best for handling complex fundraising rounds and investor reporting?,best-of,question_bank,regenerated_label,False
+Q0107,cap table management,What are the best Carta alternatives for cap table management?,alternatives,question_bank,regenerated_label,False
+Q0108,cap table management,Carta vs Pulley for cap table management which is better for early-stage startups?,comparison,question_bank,vol1_labelled,False
+Q0109,cap table management,How can cap table management software help automate employee equity vesting schedules and ESOP administration?,use-case,question_bank,vol1_labelled,False
+Q0110,cap table management,How much does cap table management software typically cost and what should I evaluate before choosing a platform?,evaluation,question_bank,vol1_labelled,False
+Q0111,cap table management,What is the best cap table management software for European startups?,best-of,question_bank,regenerated_label,False
+Q0112,cap table management,What are the best alternatives to spreadsheet-based cap table tracking for fast-growing startups?,alternatives,question_bank,regenerated_label,False
+Q0113,contract lifecycle management software,What is the best CLM software for automating contract approvals and renewals?,best-of,question_bank,vol1_labelled,False
+Q0114,contract lifecycle management software,What are the best Ironclad alternatives for contract lifecycle management?,alternatives,question_bank,vol1_labelled,False
+Q0115,contract lifecycle management software,Concord vs Ironclad: which CLM platform offers better workflow automation and integrations?,comparison,question_bank,vol1_labelled,False
+Q0116,contract lifecycle management software,How can contract lifecycle management software reduce time spent on contract negotiations for sales teams?,use-case,question_bank,vol1_labelled,False
+Q0117,contract lifecycle management software,How much does contract lifecycle management software typically cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0118,contract lifecycle management software,What is the best contract lifecycle management software for mid-sized B2B companies?,best-of,question_bank,vol1_labelled,False
+Q0119,contract lifecycle management software,What are the best Juro alternatives for small and mid-market businesses?,alternatives,question_bank,vol1_labelled,True
+Q0120,customer advocacy software,What are the best platforms for collecting and showcasing customer evidence at scale?,best-of,question_bank,regenerated_label,False
+Q0121,customer advocacy software,What are the best alternatives to Influitive for customer advocacy programs?,alternatives,question_bank,regenerated_label,False
+Q0122,customer advocacy software,GrowSurf vs Influitive: what are the key differences for B2B customer marketing?,comparison,question_bank,vol1_labelled,True
+Q0123,customer advocacy software,How much does customer advocacy software typically cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0124,customer advocacy software,What is the best customer advocacy software for B2B SaaS companies?,best-of,question_bank,regenerated_label,False
+Q0125,customer advocacy software,What are the top alternatives to GrowSurf for B2B referral and advocacy management?,alternatives,question_bank,vol1_labelled,False
+Q0126,customer advocacy software,Influitive vs Base: which customer advocacy platform is better for mid-market companies?,comparison,question_bank,vol1_labelled,False
+Q0127,customer data platform,What are the best use cases for deploying a customer data platform in a B2B revenue operations workflow?,best-of,question_bank,vol1_labelled,False
+Q0128,customer data platform,What are the best Segment alternatives for companies that want more control over their data infrastructure?,alternatives,question_bank,regenerated_label,False
+Q0129,customer data platform,Segment vs Tealium: which customer data platform is better for enterprise data governance?,comparison,question_bank,vol1_labelled,False
+Q0130,customer data platform,How can a customer data platform help reduce data silos between marketing and product teams?,use-case,question_bank,vol1_labelled,False
+Q0131,customer data platform,How should I evaluate and compare pricing models when choosing a customer data platform for a high-volume data pipeline?,evaluation,question_bank,vol1_labelled,False
+Q0132,customer data platform,What is the best CDP for real-time event tracking and data routing in e-commerce?,best-of,question_bank,regenerated_label,False
+Q0133,customer data platform,What are the best mParticle alternatives for startups that have outgrown basic analytics tools?,alternatives,question_bank,regenerated_label,False
+Q0134,customer identity / CIAM,What is the best CIAM solution for companies that need self-hosted or on-premises deployment?,best-of,question_bank,regenerated_label,False
+Q0135,customer identity / CIAM,What are the best Auth0 alternatives for startups and mid-market companies?,alternatives,question_bank,regenerated_label,False
+Q0136,customer identity / CIAM,Auth0 vs ForgeRock: how do they compare for enterprise customer identity implementation?,comparison,question_bank,vol1_labelled,False
+Q0137,customer identity / CIAM,How do I implement passwordless authentication and MFA for a multi-tenant SaaS application?,use-case,question_bank,vol1_labelled,True
+Q0138,customer identity / CIAM,How should I evaluate and compare pricing models for customer identity platforms when scaling to millions of users?,evaluation,question_bank,vol1_labelled,False
+Q0139,customer identity / CIAM,What is the best customer identity and access management platform for enterprise SaaS companies?,best-of,question_bank,regenerated_label,False
+Q0140,customer identity / CIAM,What are the best alternatives to Okta for customer identity management?,alternatives,question_bank,vol1_labelled,False
+Q0141,customer success software,What customer success platforms are best for automating health scores and playbooks across a large customer base?,best-of,question_bank,regenerated_label,False
+Q0142,customer success software,What are the best alternatives to ChurnZero for customer success teams?,alternatives,question_bank,regenerated_label,False
+Q0143,customer success software,ChurnZero vs Vitally: which customer success platform is better for scaling startups?,comparison,question_bank,vol1_labelled,False
+Q0144,customer success software,How much does enterprise customer success software typically cost and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,True
+Q0145,customer success software,What is the best customer success platform for reducing churn in B2B businesses?,best-of,question_bank,regenerated_label,False
+Q0146,customer success software,What are the top alternatives to Totango for mid-market customer success programs?,alternatives,question_bank,regenerated_label,False
+Q0147,customer success software,Totango vs Vitally: which is the better customer success software for enterprise teams?,comparison,question_bank,regenerated_label,False
+Q0148,customer support software,best customer support platform for SaaS companies,best-of,question_bank,regenerated_label,False
+Q0149,customer support software,Intercom alternatives for customer service focused companies,alternatives,question_bank,vol1_labelled,False
+Q0150,customer support software,Gorgias vs Intercom which is better for ecommerce support,comparison,question_bank,vol1_labelled,False
+Q0151,customer support software,how to evaluate customer support software pricing for a team of 10 to 50 agents,evaluation,question_bank,vol1_labelled,False
+Q0152,customer support software,best customer support software for ecommerce businesses,best-of,question_bank,vol1_labelled,False
+Q0153,customer support software,Intercom alternatives for email-based customer support,alternatives,question_bank,regenerated_label,False
+Q0154,customer support software,Intercom vs Freshdesk for customer support and live chat,comparison,question_bank,vol1_labelled,False
+Q0155,data catalog software,What is the best data catalog software for large enterprise organizations?,best-of,question_bank,vol1_labelled,True
+Q0156,data catalog software,What are the best Alation alternatives for businesses looking for a more modern data catalog?,alternatives,question_bank,vol1_labelled,False
+Q0157,data catalog software,Alation vs Collibra: which data catalog is better for regulated industries?,comparison,question_bank,vol1_labelled,False
+Q0158,data catalog software,How can a data catalog help reduce time spent on data discovery and lineage tracking across a distributed organization?,use-case,question_bank,vol1_labelled,False
+Q0159,data catalog software,How much does enterprise data catalog software typically cost and what should I look for when evaluating vendors?,evaluation,question_bank,vol1_labelled,False
+Q0160,data catalog software,What is the best data catalog solution for teams with limited data engineering resources?,best-of,question_bank,vol1_labelled,False
+Q0161,data catalog software,What are the best Collibra alternatives for mid-sized companies?,alternatives,question_bank,vol1_labelled,False
+Q0162,data observability platform,What is the best automated data observability solution for cloud data warehouses?,best-of,question_bank,vol1_labelled,False
+Q0163,data observability platform,What are the best Metaplane alternatives for monitoring data quality?,alternatives,question_bank,vol1_labelled,False
+Q0164,data observability platform,Metaplane vs Bigeye: which is the better data quality monitoring tool for mid-sized companies?,comparison,question_bank,vol1_labelled,False
+Q0165,data observability platform,How can a data observability platform help reduce pipeline failures and data downtime?,use-case,question_bank,vol1_labelled,False
+Q0166,data observability platform,How do data observability platforms typically price their plans and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0167,data observability platform,What is the best data observability platform for large-scale data pipelines?,best-of,question_bank,vol1_labelled,False
+Q0168,data observability platform,What are the best Monte Carlo alternatives for data observability?,alternatives,question_bank,vol1_labelled,False
+Q0169,data pipelines,What are the best automated data connectors for SaaS businesses?,best-of,question_bank,vol1_labelled,False
+Q0170,data pipelines,What are the best Airbyte alternatives for managed data integration?,alternatives,question_bank,vol1_labelled,False
+Q0171,data pipelines,Fivetran vs Airbyte: which is better for modern data stack pipelines?,comparison,question_bank,vol1_labelled,False
+Q0172,data pipelines,How do I automate data ingestion from multiple SaaS sources into Snowflake or BigQuery?,use-case,question_bank,vol1_labelled,False
+Q0173,data pipelines,How should I evaluate and compare pricing models for data pipeline and ETL tools?,evaluation,question_bank,vol1_labelled,False
+Q0174,data pipelines,What are the best data pipeline tools for enterprise data integration?,best-of,question_bank,vol1_labelled,True
+Q0175,data pipelines,What are the best Fivetran alternatives for data pipeline automation?,alternatives,question_bank,vol1_labelled,False
+Q0176,desk booking software,What desk booking software works best for companies with multiple office locations across different time zones?,best-of,question_bank,regenerated_label,False
+Q0177,desk booking software,What are the best alternatives to Envoy for workplace management?,alternatives,question_bank,vol1_labelled,True
+Q0178,desk booking software,Envoy vs Robin: which desk booking software is easier to deploy and use?,comparison,question_bank,vol1_labelled,False
+Q0179,desk booking software,How can desk booking software help reduce unused office space and cut real estate costs?,use-case,question_bank,vol1_labelled,False
+Q0180,desk booking software,How should I evaluate and compare desk booking software pricing models before making a purchase decision?,evaluation,question_bank,vol1_labelled,False
+Q0181,desk booking software,What is the best desk booking software for hybrid workplaces?,best-of,question_bank,vol1_labelled,False
+Q0182,desk booking software,What are the best alternatives to Robin for desk booking?,alternatives,question_bank,vol1_labelled,False
+Q0183,developer intent data software,best developer intent data software for B2B SaaS companies,best-of,question_bank,vol1_labelled,False
+Q0184,developer intent data software,6sense alternatives for developer audience targeting,alternatives,question_bank,vol1_labelled,False
+Q0185,developer intent data software,6sense vs Demandbase for developer intent data,comparison,question_bank,vol1_labelled,False
+Q0186,developer intent data software,how do B2B companies use developer intent signals to improve pipeline conversion,use-case,question_bank,vol1_labelled,False
+Q0187,developer intent data software,how much does developer intent data software typically cost and what should I evaluate before buying,evaluation,question_bank,vol1_labelled,False
+Q0188,developer intent data software,best developer-focused intent data platforms for sales and marketing teams,best-of,question_bank,regenerated_label,False
+Q0189,developer intent data software,Bombora alternatives for tracking developer intent signals,alternatives,question_bank,vol1_labelled,False
+Q0190,digital adoption,What are the best user onboarding tools for B2B software products?,best-of,question_bank,regenerated_label,False
+Q0191,digital adoption,What are the best alternatives to Pendo for product-led growth teams?,alternatives,question_bank,regenerated_label,False
+Q0192,digital adoption,Pendo vs Userpilot: which is better for in-app user onboarding?,comparison,question_bank,vol1_labelled,False
+Q0193,digital adoption,How can a digital adoption platform improve user onboarding and feature activation for a SaaS product?,use-case,question_bank,vol1_labelled,False
+Q0194,digital adoption,How much do digital adoption platforms typically cost and what should I evaluate before buying one?,evaluation,question_bank,regenerated_label,False
+Q0195,digital adoption,What are the best ways to use in-app guidance to reduce support tickets and increase product engagement?,best-of,question_bank,vol1_labelled,False
+Q0196,digital adoption,What are the best alternatives to WalkMe for mid-market companies?,alternatives,question_bank,regenerated_label,True
+Q0197,ecommerce email marketing platform,What are the best marketing automation tools for online stores with large product catalogs?,best-of,question_bank,regenerated_label,False
+Q0198,ecommerce email marketing platform,What are the best alternatives to Omnisend for ecommerce email marketing?,alternatives,question_bank,regenerated_label,False
+Q0199,ecommerce email marketing platform,Drip vs Sendlane: which ecommerce marketing automation platform has better analytics and reporting?,comparison,question_bank,vol1_labelled,True
+Q0200,ecommerce email marketing platform,How can an ecommerce brand use email marketing automation to recover abandoned carts and increase repeat purchases?,use-case,question_bank,vol1_labelled,False
+Q0201,ecommerce email marketing platform,How much do ecommerce email marketing platforms typically cost and what should I evaluate before choosing one?,evaluation,question_bank,regenerated_label,False
+Q0202,ecommerce email marketing platform,What is the best email marketing platform for ecommerce businesses?,best-of,question_bank,regenerated_label,False
+Q0203,ecommerce email marketing platform,What are the top alternatives to Drip for ecommerce brands that need advanced segmentation?,alternatives,question_bank,regenerated_label,False
+Q0204,ecommerce personalization software,What are the best AI-driven product recommendation tools for mid-sized ecommerce brands?,best-of,question_bank,regenerated_label,False
+Q0205,ecommerce personalization software,Algolia alternatives for ecommerce search and personalization,alternatives,question_bank,vol1_labelled,False
+Q0206,ecommerce personalization software,Algolia vs Bloomreach for ecommerce personalization and search,comparison,question_bank,vol1_labelled,False
+Q0207,ecommerce personalization software,How can ecommerce personalization software help reduce cart abandonment and increase repeat purchases?,use-case,question_bank,vol1_labelled,False
+Q0208,ecommerce personalization software,How do ecommerce personalization platforms typically price their plans and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,False
+Q0209,ecommerce personalization software,What are the best AI-powered product recommendation engines for mid-market ecommerce brands?,best-of,question_bank,vol1_labelled,False
+Q0210,ecommerce personalization software,Bloomreach alternatives for ecommerce personalization,alternatives,question_bank,vol1_labelled,False
+Q0211,ecommerce platform,What ecommerce platform works best for selling fan merchandise directly to an audience?,best-of,question_bank,regenerated_label,False
+Q0212,ecommerce platform,What are the best BigCommerce alternatives for small independent online shops?,alternatives,question_bank,vol1_labelled,False
+Q0213,ecommerce platform,Shopify vs Squarespace for building an online store which is better for beginners?,comparison,question_bank,vol1_labelled,False
+Q0214,ecommerce platform,How should I evaluate ecommerce platforms based on transaction fees revenue sharing and payout structure?,evaluation,question_bank,vol1_labelled,False
+Q0215,ecommerce platform,What is the best ecommerce platform for creators and influencers selling merchandise?,best-of,question_bank,regenerated_label,False
+Q0216,ecommerce platform,What are the best Shopify alternatives for creator-focused ecommerce stores?,alternatives,question_bank,regenerated_label,False
+Q0217,ecommerce platform,Wix vs BigCommerce which ecommerce platform is better for scaling a product business?,comparison,question_bank,vol1_labelled,True
+Q0218,ecommerce quiz and personalization software,What are the best on-site personalization tools for increasing ecommerce conversions?,best-of,question_bank,vol1_labelled,False
+Q0219,ecommerce quiz and personalization software,What are the best Justuno alternatives for ecommerce personalization and pop-ups?,alternatives,question_bank,vol1_labelled,False
+Q0220,ecommerce quiz and personalization software,Justuno vs OptiMonk: which is better for ecommerce personalization?,comparison,question_bank,vol1_labelled,False
+Q0221,ecommerce quiz and personalization software,How can ecommerce brands use product recommendation quizzes to reduce returns and increase average order value?,use-case,question_bank,vol1_labelled,False
+Q0222,ecommerce quiz and personalization software,How much does ecommerce quiz and personalization software typically cost and what should I look for when evaluating vendors?,evaluation,question_bank,vol1_labelled,False
+Q0223,ecommerce quiz and personalization software,What is the best lead capture and segmentation software for Shopify and WooCommerce stores?,best-of,question_bank,vol1_labelled,False
+Q0224,ecommerce quiz and personalization software,What are the best OptiMonk alternatives for onsite engagement and quiz funnels?,alternatives,question_bank,vol1_labelled,False
+Q0225,ecommerce site search software,What are the best AI-powered product search and discovery platforms for ecommerce businesses?,best-of,question_bank,vol1_labelled,False
+Q0226,ecommerce site search software,Algolia alternatives for ecommerce search and merchandising,alternatives,question_bank,vol1_labelled,False
+Q0227,ecommerce site search software,Algolia vs Bloomreach for ecommerce product search and discovery,comparison,question_bank,vol1_labelled,False
+Q0228,ecommerce site search software,How can AI-powered site search software reduce zero-results searches and improve product findability in an online store?,use-case,question_bank,vol1_labelled,False
+Q0229,ecommerce site search software,"How should I evaluate and compare ecommerce site search vendors, and what pricing models should I expect?",evaluation,question_bank,vol1_labelled,True
+Q0230,ecommerce site search software,What ecommerce search and product discovery tools work best for catalog-heavy retailers with thousands of SKUs?,best-of,question_bank,vol1_labelled,False
+Q0231,ecommerce site search software,Algolia alternatives for ecommerce site search,alternatives,question_bank,vol1_labelled,False
+Q0232,employee engagement software,What are the best employee engagement platforms for improving retention and reducing turnover?,best-of,question_bank,vol1_labelled,True
+Q0233,employee engagement software,What are the best Culture Amp alternatives for employee engagement?,alternatives,question_bank,vol1_labelled,False
+Q0234,employee engagement software,Culture Amp vs Peakon which employee engagement platform is better for enterprise teams?,comparison,question_bank,vol1_labelled,False
+Q0235,employee engagement software,How can employee engagement software help HR teams identify burnout before it leads to attrition?,use-case,question_bank,vol1_labelled,False
+Q0236,employee engagement software,How much does employee engagement software typically cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0237,employee engagement software,What employee engagement platforms work best for frontline and deskless workers?,best-of,question_bank,vol1_labelled,False
+Q0238,employee engagement software,What are the best Peakon alternatives for continuous employee listening?,alternatives,question_bank,vol1_labelled,False
+Q0239,helpdesk,What helpdesk software works best for IT teams managing both internal and external support requests?,best-of,question_bank,vol1_labelled,False
+Q0240,helpdesk,What are the best Freshdesk alternatives for enterprises that need more customization?,alternatives,question_bank,vol1_labelled,False
+Q0241,helpdesk,Freshdesk vs Help Scout: which helpdesk software offers better value for money?,comparison,question_bank,vol1_labelled,False
+Q0242,helpdesk,How can a helpdesk platform improve response times and customer satisfaction for a SaaS company?,use-case,question_bank,vol1_labelled,False
+Q0243,helpdesk,How should I evaluate and compare helpdesk software pricing models when building a business case for my team?,evaluation,question_bank,vol1_labelled,False
+Q0244,helpdesk,What is the best customer support platform for online retailers managing multiple marketplaces?,best-of,question_bank,regenerated_label,False
+Q0245,helpdesk,What are the best Gorgias alternatives for multichannel ecommerce helpdesks?,alternatives,question_bank,regenerated_label,False
+Q0246,interactive demo software,What are the best no-code product demo tools for sales and marketing teams?,best-of,question_bank,regenerated_label,False
+Q0247,interactive demo software,What are the best Navattic alternatives for creating interactive product demos?,alternatives,question_bank,regenerated_label,False
+Q0248,interactive demo software,Seismic interactive demo vs Navattic: which is better for enterprise sales teams?,comparison,question_bank,vol1_labelled,False
+Q0249,interactive demo software,How can interactive demo software help reduce sales cycle length for SaaS products?,use-case,question_bank,vol1_labelled,False
+Q0250,interactive demo software,How much does interactive demo software typically cost and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,False
+Q0251,interactive demo software,What is the best interactive demo software for B2B SaaS companies?,best-of,question_bank,regenerated_label,True
+Q0252,interactive demo software,What are the best Seismic alternatives for creating interactive product demos?,alternatives,question_bank,regenerated_label,False
+Q0253,resource management software,What is the best project resource scheduling software for enterprise teams?,best-of,question_bank,vol1_labelled,False
+Q0254,resource management software,What are the best Float alternatives for large professional services organizations?,alternatives,question_bank,vol1_labelled,True
+Q0255,resource management software,Float vs Mosaic: which is better for resource forecasting and team utilization?,comparison,question_bank,vol1_labelled,False
+Q0256,resource management software,How can resource management software help improve utilization rates across a multi-practice consulting firm?,use-case,question_bank,vol1_labelled,False
+Q0257,resource management software,How much does enterprise resource management software typically cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0258,resource management software,What is the best real-time resource scheduling software for agencies and consultancies?,best-of,question_bank,vol1_labelled,False
+Q0259,resource management software,What are the best Float alternatives for resource planning and capacity management?,alternatives,question_bank,regenerated_label,False
+Q0260,revenue intelligence software,What are the best AI meeting assistants and conversation intelligence tools for sales teams in 2024?,best-of,question_bank,regenerated_label,False
+Q0261,revenue intelligence software,What are the best Chorus alternatives for teams looking for AI-driven sales coaching?,alternatives,question_bank,vol1_labelled,False
+Q0262,revenue intelligence software,Aviso vs Gong: which AI forecasting tool delivers more accurate revenue predictions?,comparison,question_bank,vol1_labelled,False
+Q0263,revenue intelligence software,How can conversation intelligence software help reduce sales rep ramp time and improve onboarding?,use-case,question_bank,vol1_labelled,False
+Q0264,revenue intelligence software,How much does revenue intelligence software cost and what should I evaluate before buying?,evaluation,question_bank,vol1_labelled,False
+Q0265,revenue intelligence software,What are the best AI-powered conversation intelligence tools for improving sales rep performance?,best-of,question_bank,vol1_labelled,False
+Q0266,revenue intelligence software,What are the best Chorus alternatives for teams looking for more affordable conversation intelligence?,alternatives,question_bank,regenerated_label,False
+Q0267,site search,What are the best AI-powered site search platforms for B2B websites with complex catalogs?,best-of,vol1_dataset,vol1_labelled,False
+Q0268,site search,What are the best Algolia alternatives for ecommerce site search?,alternatives,question_bank,vol1_labelled,False
+Q0269,site search,Algolia vs Constructor: which is better for ecommerce product search?,comparison,question_bank,vol1_labelled,False
+Q0270,site search,How can AI site search improve product findability and reduce bounce rates on an e-commerce site?,use-case,vol1_dataset,vol1_labelled,False
+Q0271,site search,How do enterprise site search platforms typically price their plans and what should I evaluate before signing a contract?,evaluation,vol1_dataset,vol1_labelled,False
+Q0272,site search,What are the best AI-powered site search tools for mid-market retailers?,best-of,question_bank,vol1_labelled,False
+Q0273,site search,What are the best Algolia alternatives for enterprise site search?,alternatives,vol1_dataset,vol1_labelled,True
+Q0274,website visitor identification software,What are the best tools for identifying anonymous website visitors for sales and marketing teams?,best-of,question_bank,regenerated_label,False
+Q0275,website visitor identification software,What are the best Clearbit alternatives for B2B intent data and visitor identification?,alternatives,question_bank,vol1_labelled,False
+Q0276,website visitor identification software,6sense vs Demandbase: which is better for B2B website visitor identification and account-based marketing?,comparison,question_bank,vol1_labelled,False
+Q0277,website visitor identification software,How can B2B companies use website visitor identification software to improve sales pipeline generation?,use-case,question_bank,vol1_labelled,False
+Q0278,website visitor identification software,How much does website visitor identification software typically cost and what should I evaluate before buying?,evaluation,question_bank,regenerated_label,False
+Q0279,website visitor identification software,What are the best tools for identifying anonymous website visitors for sales teams?,best-of,question_bank,vol1_labelled,False
+Q0280,website visitor identification software,What are the best alternatives to 6sense for website visitor identification?,alternatives,question_bank,regenerated_label,False

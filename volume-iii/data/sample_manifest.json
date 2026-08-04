@@ -1,0 +1,137 @@
+{
+  "n_categories": 40,
+  "questions_per_category": 7,
+  "n_questions": 280,
+  "n_stability_questions": 25,
+  "stability_repeats": 3,
+  "engines": [
+    "chatgpt",
+    "claude",
+    "perplexity",
+    "google_aio"
+  ],
+  "planned_main_calls": 1120,
+  "planned_stability_extra_calls": 200,
+  "serpapi_worst_case": 660,
+  "category_selection_rule": "all Volume I categories carrying more than one measured company, then singleton categories alphabetically, to 40",
+  "excluded_test_rows": [
+    [
+      "Jane Doe",
+      "ExampleCo",
+      "site search"
+    ]
+  ],
+  "leader_rows_not_measured": [
+    "DocuSign",
+    "Gainsight",
+    "Google Analytics",
+    "Gusto",
+    "Klaviyo",
+    "LaunchDarkly",
+    "Pendo",
+    "Sentry",
+    "Vanta"
+  ],
+  "categories": [
+    "AI business intelligence software",
+    "B2B marketing analytics software",
+    "B2B marketing attribution software",
+    "CDP / analytics",
+    "DME billing software",
+    "ELT data pipeline software",
+    "PDF editor",
+    "SOC 2 compliance automation software",
+    "account based marketing software",
+    "association management software",
+    "banking customer experience software",
+    "best e-signature software for small business",
+    "best error tracking software for developers",
+    "best simple web analytics tool",
+    "best small business payroll software",
+    "cap table management",
+    "contract lifecycle management software",
+    "customer advocacy software",
+    "customer data platform",
+    "customer identity / CIAM",
+    "customer success software",
+    "customer support software",
+    "data catalog software",
+    "data observability platform",
+    "data pipelines",
+    "desk booking software",
+    "developer intent data software",
+    "digital adoption",
+    "ecommerce email marketing platform",
+    "ecommerce personalization software",
+    "ecommerce platform",
+    "ecommerce quiz and personalization software",
+    "ecommerce site search software",
+    "employee engagement software",
+    "helpdesk",
+    "interactive demo software",
+    "resource management software",
+    "revenue intelligence software",
+    "site search",
+    "website visitor identification software"
+  ],
+  "shape_coverage_shortfalls": [
+    {
+      "category": "SOC 2 compliance automation software",
+      "missing_shapes": [
+        "use-case"
+      ]
+    },
+    {
+      "category": "best error tracking software for developers",
+      "missing_shapes": [
+        "use-case",
+        "evaluation"
+      ]
+    },
+    {
+      "category": "best simple web analytics tool",
+      "missing_shapes": [
+        "use-case",
+        "evaluation"
+      ]
+    },
+    {
+      "category": "customer advocacy software",
+      "missing_shapes": [
+        "use-case"
+      ]
+    },
+    {
+      "category": "customer success software",
+      "missing_shapes": [
+        "use-case"
+      ]
+    },
+    {
+      "category": "customer support software",
+      "missing_shapes": [
+        "use-case"
+      ]
+    },
+    {
+      "category": "ecommerce platform",
+      "missing_shapes": [
+        "use-case"
+      ]
+    }
+  ],
+  "universe_companies": 98,
+  "universe_competitor_names": 227,
+  "question_shape_mix": {
+    "best-of": 80,
+    "alternatives": 80,
+    "comparison": 47,
+    "use-case": 33,
+    "evaluation": 38,
+    "other": 2
+  },
+  "question_source_mix": {
+    "question_bank": 276,
+    "vol1_dataset": 4
+  }
+}

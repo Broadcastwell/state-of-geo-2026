@@ -1,0 +1,99 @@
+company,domain,category,competitors,brand_aliases,in_sampled_category,measured_subject
+NikoHealth,nikohealth.com,DME billing software,"Brightree, Bonafide, DMEworks",,True,True
+Supercede,supercede.com,reinsurance placement software,"Whitespace, Sequel, Artificial Labs",,False,True
+ProSymmetry,prosymmetry.com,resource management software,"Planview, Smartsheet, Float",,True,True
+Movemedical,movemedical.com,medical device inventory software,"GHX, Censis, Mobile Aspects",,False,True
+Evocalize,evocalize.com,through-channel marketing automation software,"Tiger Pistol, SOCi, Hearsay",,False,True
+Kadence,kadence.co,desk booking software,"Envoy, Robin, Skedda",,True,True
+OvationCXM,ovationcxm.com,banking customer experience software,"Glia, Pega, Salesforce FSC",,True,True
+GrowthZone,growthzone.com,association management software,"MemberClicks, Novi AMS, Wild Apricot",,True,True
+Fuel50,fuel50.com,internal talent marketplace software,"Gloat, Eightfold, 365Talents",,False,True
+Weflow,getweflow.com,revenue intelligence software,"Gong, Clari, Chorus",,True,True
+Digioh,digioh.com,ecommerce quiz and personalization software,"Justuno, OptiMonk, Klaviyo",,True,True
+Nosto,nosto.com,ecommerce personalization software,"Algolia, Bloomreach, Klevu",,True,True
+Claravine,claravine.com,marketing data taxonomy software,"Adverity, Improvado, Funnel.io",,False,True
+WisdomAI,wisdom.ai,AI business intelligence software,"ThoughtSpot, Tableau Pulse, Databricks Genie",,True,True
+Terret,terret.ai,revenue intelligence software,"Gong, Clari, Aviso",,True,True
+Dayshape,dayshape.com,resource management software,"Float, Planview, Kantata",,True,True
+Runn,runn.io,resource management software,"Float, Planview, Mosaic",,True,True
+Metadata,metadata.io,account based marketing software,"6sense, Demandbase, ZoomInfo",,True,True
+HockeyStack,hockeystack.com,B2B marketing attribution software,"6sense, Dreamdata, Bizible",,True,True
+Navattic,navattic.com,interactive demo software,"Seismic, Walnut, Storylane",,True,True
+Storylane,storylane.io,interactive demo software,"Seismic, Navattic, Walnut",,True,True
+UserGems,usergems.com,account based marketing software,"6sense, Demandbase, Clay",,True,True
+Factors.ai,factors.ai,account based marketing software,"6sense, Demandbase, RollWorks",,True,True
+Help Scout,helpscout.com,customer support software,"Zendesk, Intercom, Freshdesk",,True,True
+Dixa,dixa.com,customer support software,"Zendesk, Intercom, Gorgias",,True,True
+Warmly,warmly.ai,website visitor identification software,"6sense, Clearbit, Demandbase",,True,True
+Rebuy Engine,rebuyengine.com,ecommerce personalization software,"Bloomreach, Algolia, Nosto",,True,True
+Fast Simon,fastsimon.com,ecommerce site search software,"Algolia, Bloomreach, Klevu",,True,True
+Influ2,influ2.com,account based marketing software,"6sense, Demandbase, RollWorks",,True,True
+LimeSpot,limespot.com,ecommerce personalization software,"Bloomreach, Algolia, Nosto",,True,True
+Common Room,commonroom.io,account based marketing software,"6sense, Demandbase, Clay",,True,True
+Snitcher,snitcher.com,website visitor identification software,"6sense, Lead Forensics, Demandbase",,True,True
+Reo.Dev,reo.dev,developer intent data software,"6sense, Demandbase, Bombora",,True,True
+Zenlytic,zenlytic.com,AI business intelligence software,"ThoughtSpot, Looker, Omni",,True,True
+Luigi's Box,luigisbox.com,ecommerce site search software,"Algolia, Constructor, Klevu",,True,True
+Avoma,avoma.com,revenue intelligence software,"Gong, Clari, Chorus",,True,True
+Octane11,octane11.com,B2B marketing analytics software,"6sense, Demandbase, Dreamdata",,True,True
+Cal.com,cal.com,scheduling software,"Calendly, SavvyCal, Chili Piper",,False,True
+RudderStack,rudderstack.com,customer data platform,"Segment, mParticle, Tealium",,True,True
+DocuSign,docusign.com,best e-signature software for small business,"Signeasy, PandaDoc, Dropbox Sign",,True,False
+Gusto,gusto.com,best small business payroll software,"OnPay, Patriot Software, ADP",,True,False
+Sentry,sentry.io,best error tracking software for developers,"Rollbar, Raygun, AppSignal",,True,False
+Google Analytics,google.com,best simple web analytics tool,"Piwik PRO, Fathom, Matomo",,True,False
+Sybill,sybill.ai,revenue intelligence software,"Gong, Clari, Chorus",,True,True
+Prefixbox,prefixbox.com,ecommerce site search software,"Algolia, Constructor, Klevu",,True,True
+Propensity,propensity.com,account based marketing software,"6sense, Demandbase, Terminus",,True,True
+FactFinder,factfinder.com,ecommerce site search software,"Algolia, Constructor, Klevu",,True,True
+BambooBox,bamboobox.ai,account based marketing software,"6sense, Demandbase, Terminus",,True,True
+N.Rich,n.rich,account based marketing software,"6sense, Demandbase, Terminus",,True,True
+Vanta,vanta.com,SOC 2 compliance automation software,"Drata, Secureframe, Sprinto",,True,False
+Pendo,pendo.io,product adoption platform,"Appcues, Userpilot, Chameleon",,False,False
+Gainsight,gainsight.com,customer success software,"ChurnZero, Totango, Vitally",,True,False
+LaunchDarkly,launchdarkly.com,feature flag management software,"Split, Flagsmith, ConfigCat",,False,False
+Klaviyo,klaviyo.com,ecommerce email marketing platform,"Omnisend, Drip, Sendlane",,True,False
+Folloze,folloze.com,account based marketing software,"6sense, Demandbase, Terminus",,True,True
+Oneflow,oneflow.com,contract lifecycle management software,"Ironclad, Juro, Concord",,True,True
+Kontent.ai,kontent.ai,headless CMS platform,"Contentful, Storyblok, Sanity",,False,True
+Mouseflow,mouseflow.com,session replay software,"FullStory, Hotjar, LogRocket",,False,True
+Younium,younium.com,subscription billing software,"Chargebee, Recurly, Paddle",,False,True
+Validio,validio.io,data observability platform,"Monte Carlo, Metaplane, Bigeye",,True,True
+Crowdin,crowdin.com,software localization platform,"Lokalise, Phrase, Transifex",,False,True
+Weel,letsweel.com,spend management software,"Ramp, Brex, Pleo",,False,True
+Weld,weld.app,ELT data pipeline software,"Fivetran, Hevo, Airbyte",,True,True
+WeWeb,weweb.io,internal tools builder,"Retool, Appsmith, Budibase",,False,True
+ilert,ilert.com,incident management software,"PagerDuty, Opsgenie, Rootly",,False,True
+Softr,softr.io,no-code app builder,"Airtable, Retool, Bubble",,False,True
+DataGalaxy,datagalaxy.com,data catalog software,"Alation, Atlan, Collibra",,True,True
+Survicate,survicate.com,in-product survey software,"Sprig, Refiner, Qualtrics",,False,True
+UserEvidence,userevidence.com,customer advocacy software,"Influitive, Base, GrowSurf",,True,True
+Inpulse,inpulse.com,employee engagement software,"Culture Amp, Peakon, Officevibe",,True,True
+Hive HR,hive.hr,employee engagement software,"Culture Amp, Peakon, Officevibe",,True,True
+RemotePass,remotepass.com,employer of record software,"Deel, Remote, Oyster",,False,True
+Firefish Software,firefishsoftware.com,recruitment CRM software,"Bullhorn, Vincere, JobAdder",,False,True
+Appcues,appcues.com,digital adoption,"Pendo, WalkMe, Userpilot",,True,True
+Hello Retail,helloretail.com,site search,"Algolia, Coveo, Constructor",,True,True
+eDesk,edesk.com,helpdesk,"Zendesk, Gorgias, Freshdesk",,True,True
+Deskpro,deskpro.com,helpdesk,"Zendesk, Freshdesk, Help Scout",,True,True
+Piwik PRO,piwik.pro,CDP / analytics,"Segment, Adobe, Tealium",,True,True
+Matia,matia.io,data pipelines,"Fivetran, Airbyte, Stitch",,True,True
+Influ2,influ2.com,ABM,"6sense, Demandbase, Terminus",,False,True
+Pitch,pitch.com,presentation software,"Canva, PowerPoint, Google Slides, Beautiful.ai, Gamma",,False,True
+FusionAuth,fusionauth.io,customer identity / CIAM,"Okta, Auth0, Ping Identity, ForgeRock",,True,True
+iLovePDF,ilovepdf.com,PDF editor,"Adobe Acrobat, Smallpdf, Foxit, Nitro",,True,True
+Fourthwall,fourthwall.com,ecommerce platform,"Shopify, BigCommerce, Squarespace, Wix",,True,True
+Ledgy,ledgy.com,cap table management,"Carta, Pulley, Eqvista, Qapita",,True,True
+Pan.bio,pan.bio,bioinformatics platform,"Lifebit, DNAnexus, Fabric Genomics, Golden Helix, QIAGEN",,False,True
+Pan.bio|Bionl,pan.bio|bionl.ai,bioinformatics platform,"Lifebit, DNAnexus, Fabric Genomics, Golden Helix, QIAGEN",,False,True
+Broadcastwell,broadcastwell.com,AI search visibility agency,"Omniscient Digital, Minuttia, Hamster Garage, Rampiq, Zupo",,False,True
+Mobileforce Software,mobileforcesoftware.com,CPQ software,"Salesforce Revenue Cloud, Conga, DealHub, PandaDoc",,False,True
+Opendate,opendate.io,live event ticketing software,"Ticketmaster, Eventbrite, Etix, Prekindle",,False,True
+Lightspeed DMS,lightspeeddms.com,powersports dealership management software,"DX1, Blackpurl, Dominion DMS, Ideal Computer Systems, Talon DMS","LightspeedEVO, Lightspeed EVO, Lightspeed Edge, Lightspeed Powersports, Lightspeed",False,True
+Lightspeed DMS,lightspeeddms.com,powersports dealership management software,"DX1, Blackpurl, Dominion DMS, Ideal Computer Systems, Talon DMS",,False,True
+CIVIE,civie.com|collaborativeimaging.com,radiology information system software,"Epic Radiant, Sectra, Merative Merge, Intelerad, RamSoft",,False,True
+CIVIE,civie.com|collaborativeimaging.com,PACS software,"Sectra, Fujifilm Synapse, Merative Merge, Intelerad, Visage Imaging",,False,True
+CARET Legal,caretlegal.com,legal practice management software,"Clio, MyCase, Filevine, PracticePanther, CosmoLex, Smokeball, Rocket Matter",,False,True
+Finvi,finvi.com,debt collection software for collection agencies,"TrueAccord, Katabat, InterProse, CollectMax, Debtmaster, Simplicity Collection Software",,False,True
+CARET Legal,caretlegal.com,legal practice management software,"Clio, MyCase, Filevine, PracticePanther, CosmoLex, Smokeball, Rocket Matter",,False,True
+Finvi,finvi.com,healthcare revenue cycle management software,"Waystar, R1 RCM, Availity, Experian Health, FinThrive, AGS Health, Ensemble Health Partners","Ontario Systems, Artiva, Artiva HCx",False,True
