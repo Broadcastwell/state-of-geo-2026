@@ -155,15 +155,18 @@ A(f"Buyers now ask AI search products, not search engines, which software to buy
   f"times**, so engine-to-engine difference can be read against each engine's own "
   f"run-to-run noise rather than in isolation.")
 A("")
-A(f"**Three of the four API accounts ran out of credit during collection.** The study "
-  f"as executed therefore holds {CC['per_engine']['google_aio']['main_set_rows']} "
-  f"Google AI Overviews answers, {CC['per_engine']['claude']['main_set_rows']} Claude, "
-  f"{CC['per_engine']['perplexity']['main_set_rows']} Perplexity and "
-  f"{CC['per_engine']['chatgpt']['main_set_rows']} ChatGPT, out of "
-  f"{CC['planned_questions']} planned for each. Section 3.8 states exactly what died "
-  f"and when. Every figure below carries the sample it was computed on, and the "
-  f"four-engine intersection is reported at its true size of "
-  f"{ES['four_engine']['n_questions_all_ok']} questions rather than dressed up.")
+_done = [e for e in E if CC['per_engine'][e]['main_set_rows'] >= CC['planned_questions']]
+_short = [e for e in E if CC['per_engine'][e]['main_set_rows'] < CC['planned_questions']]
+A(f"**Three of the four API accounts ran out of credit during collection. One was "
+  f"topped up and finished; two were not.** The study as executed therefore holds "
+  + ", ".join(f"{CC['per_engine'][e]['main_set_rows']} {LAB[e]}" for e in E)
+  + f" answers out of {CC['planned_questions']} planned for each. Section 3.8 states "
+    f"exactly what stopped and when. Every figure below carries the sample it was "
+    f"computed on, and the four-engine intersection is reported at its true size of "
+    f"{ES['four_engine']['n_questions_all_ok']} questions rather than dressed up. "
+    f"The two engines that completed, "
+  + " and ".join(LAB[e] for e in _done)
+  + ", are the two that carry the repeat comparison below.")
 A("")
 _pe_lines = []
 for _e in POWERED:
@@ -563,18 +566,21 @@ A(f"**Two.** Pairwise metrics are unaffected in kind, only in precision, because
   f"and the sample size sits in the table next to the number.")
 A("")
 A(f"**Three, and this is why the paper still stands:** the decisive test in section "
-  f"4.5 does not need four engines. It needs repeats, and the repeats survived. "
-  f"Google AI Overviews completed all three runs of all "
-  f"{MAN['n_stability_questions']} stability questions, and Claude completed enough "
-  f"to contribute {dt['within_by_engine'].get('claude', {}).get('n_pairs', 0)} repeat "
-  f"pairs before its account emptied. The within-engine baseline rests on "
-  f"{dt['within_engine']['n_pairs']} repeat pairs.")
+  f"4.5 does not need four engines. It needs repeats, and both engines that finished "
+  f"have them. Google AI Overviews and Claude each completed all three runs of all "
+  f"{MAN['n_stability_questions']} stability questions, contributing "
+  f"{DTE['engines']['google_aio']['repeat_pairs']} and "
+  f"{DTE['engines']['claude']['repeat_pairs']} repeat pairs respectively. The two "
+  f"engines that ran out of credit contribute no repeat pairs and no verdict, which "
+  f"is stated rather than hidden.")
 A("")
 A(f"The Layer 2 extractor shares the Anthropic key with the Claude engine, so it "
-  f"stopped when that account did. It covers {p(L2['coverage'])} of collected "
-  f"answers ({L2['with_layer2']} of {L2['answers_ok']}), short by "
-  + ", ".join(f"{v} {LAB.get(k, k)}" for k, v in sorted(L2['missing_by_engine'].items()))
-  + ". Layer 1 covers every answer. Because Layer 2 can only ADD out-of-universe "
+  f"stopped when that account did and resumed with it. It covers "
+  f"{p(L2['coverage'])} of collected answers ({L2['with_layer2']} of "
+  f"{L2['answers_ok']})"
+  + ("." if not L2['missing_by_engine'] else
+     ", short by " + ", ".join(f"{v} {LAB.get(k, k)}" for k, v in sorted(L2['missing_by_engine'].items())) + ".")
+  + " Layer 1 covers every answer. Because Layer 2 can only ADD out-of-universe "
   "names, the gap can only narrow a vendor set and never widen one, and every "
   "universe-only statistic in this paper is completely independent of it. The "
   "universe-only sensitivity analysis in section 4.8 is therefore also the "
