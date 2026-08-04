@@ -1,0 +1,36 @@
+You are extracting vendor and product names from an AI search answer.
+
+TASK
+List every distinct company, vendor, product or platform that is NAMED in the
+answer text below as a thing a buyer could purchase or adopt.
+
+RULES
+1. Include a name only if it literally appears in the answer text. Never infer,
+   expand or add a vendor the text does not name.
+2. Return the product or company name as the answer writes it, normalised only
+   for surrounding punctuation, markdown, and trailing legal suffixes
+   (Inc, Ltd, LLC, GmbH). Keep internal capitalisation, digits, dots and hyphens
+   exactly as written (6sense, Pan.bio, Help Scout).
+3. If the answer names both a company and one of its products (Salesforce and
+   Salesforce Financial Services Cloud), return both as separate entries.
+4. Exclude: generic category words ("CRM", "a data warehouse"), publications and
+   review sites cited as sources (G2, Capterra, Gartner, Forbes) unless the
+   answer recommends them as a product to buy, the asker's own company, and any
+   name that appears only inside a URL.
+5. Exclude cloud or infrastructure providers mentioned only as an integration or
+   a deployment target (AWS, Snowflake, BigQuery) unless the answer presents
+   them as an option for the question being asked.
+6. Do not rank, comment, explain or deduplicate near-variants into one. Return
+   what is there.
+
+OUTPUT
+Return ONLY a JSON array of strings. No preamble, no markdown fences, no keys.
+If no vendor is named, return [].
+
+Example output:
+["ThoughtSpot", "Omni", "Microsoft Power BI"]
+
+ANSWER TEXT
+---
+{{ANSWER}}
+---
