@@ -109,3 +109,21 @@ Method: one AI engine with live web search, one run per question. AI answers var
 ---
 
 Broadcastwell LLC · Indiana, USA · [hello@broadcastwell.com](mailto:hello@broadcastwell.com)
+
+## Volume III, v3.0 - Cross-engine divergence
+
+DOI 10.5281/zenodo.21789120 . Data, analysis and paper in `volume-iii/`
+
+280 B2B software buyer questions across 40 categories, put to four production AI search products (ChatGPT, Claude, Perplexity, Google AI Overviews) on 4 August 2026, with a 25-question subsample re-run three times so engine-to-engine difference could be read against each engine's own run-to-run noise.
+
+| Metric | Value |
+|---|---|
+| Scored answers | 853 |
+| Google AI Overviews: agrees with itself / with other engines | 0.499 / 0.240, gap +0.258 |
+| Claude: agrees with itself / with other engines | 0.442 / 0.277, gap +0.165 |
+| Claude gap after a length control | +0.002, not significant |
+| Mean pairwise Jaccard, all engine pairs | 0.313, 590 pair observations |
+| Vendor mentions from exactly one engine (3 engines, n=142) | 63.3% |
+| Google AI Overview trigger rate | 92.1% |
+
+On Google AI Overviews the divergence survives every length control. On Claude it disappears once list length is controlled, so on Claude it cannot be distinguished from the two engines naming different-length lists.
