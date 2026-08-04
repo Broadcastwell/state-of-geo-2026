@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+title: "The 2026 State of Generative Engine Optimization"
+message: "If you use this dataset, please cite it as below."
+type: dataset
+authors:
+  - family-names: "Sivakumar"
+    given-names: "Sairam"
+    affiliation: "Broadcastwell LLC"
+    email: "sairam@broadcastwell.com"
+  - name: "Broadcastwell Research"
+version: "3.0"
+date-released: "2026-08-04"
+doi: "10.5281/zenodo.21789120"
+url: "https://broadcastwell.com/state-of-geo"
+repository-code: "https://github.com/Broadcastwell/state-of-geo-2026"
+license: CC-BY-4.0
+keywords:
+  - generative engine optimization
+  - AI search
+  - large language models
+  - B2B software
+  - brand visibility
+  - cross-engine divergence
+  - answer engine optimization
+  - Google AI Overviews
+references:
+  - type: dataset
+    title: "The 2026 State of Generative Engine Optimization, v1.0"
+    doi: "10.5281/zenodo.21537014"
+    year: 2026
+    authors:
+      - name: "Broadcastwell Research"
+  - type: dataset
+    title: "The 2026 State of Generative Engine Optimization, v2.0"
+    doi: "10.5281/zenodo.21586091"
+    year: 2026
+    authors:
+      - name: "Broadcastwell Research"
