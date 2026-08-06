@@ -84,7 +84,7 @@ Data released under [CC BY 4.0](https://creativecommons.org/licenses/by/4.0/). R
 
 ## Roadmap
 
-A Q4 2026 multi-engine edition will add ChatGPT, Perplexity, Gemini and Google AI Overviews. Watch this repository for the release.
+A Q4 2026 multi-engine edition will add ChatGPT, Perplexity, Claude and Google AI Overviews. Watch this repository for the release.
 
 ## Volume II: The Absence Ladder
 
